@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
     lazy var locationManeger = CLLocationManager()
+    var controller = MapController()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,17 +26,20 @@ class ViewController: UIViewController {
     }
     
     func configurateMap() {
-        mapView.userTrackingMode = .follow
-        mapView.delegate = self
+        var coordination =  CLLocationCoordinate2D(latitude: Double(controller.latitude()), longitude: Double( controller.longitude()))
         
+        controller.getAPIMap { (sucess) in
+            let direction = MKCoordinateRegion(center: coordination, latitudinalMeters: 1000, longitudinalMeters: 1000)
+            self.mapView.setRegion(direction, animated: true)
+        }
         let annotation = MKPointAnnotation()
-        annotation.coordinate = CLLocationCoordinate2D(latitude: -23.5489, longitude:  -46.6388)
+        annotation.coordinate = coordination
         mapView.addAnnotation(annotation)
     }
 }
 
 extension UIViewController: MKMapViewDelegate {
     public func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
- 
+        
     }
 }
