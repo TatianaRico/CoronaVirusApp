@@ -10,21 +10,17 @@ import UIKit
 
 class CoronaTableViewCell: UITableViewCell {
     
-
+    // MARK: - IBOutlets
+    @IBOutlet weak var nameLb: UILabel!
+    
+    // MARK: - Super Methods
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    @IBOutlet weak var nameLb: UILabel!
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-   
+    // MARK: Methods
     func setup(corona: Corona){
         nameLb.text = corona.state
     }
-
 }

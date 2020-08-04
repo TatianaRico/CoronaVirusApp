@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gMB-i0-CPU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -150,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="-208"/>
+            <point key="canvasLocation" x="1125" y="-255"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wgR-oE-ldd">
@@ -282,7 +282,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L4U-Nh-Hml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-520" y="-622"/>
+            <point key="canvasLocation" x="-554" y="-654"/>
         </scene>
         <!--Corona World Detail View Controller-->
         <scene sceneID="HH4-Y3-ExT">
@@ -340,6 +340,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2q-mG-mfd">
+                                <rect key="frame" x="50" y="612" width="314" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="L0n-hE-7lf"/>
+                                </constraints>
+                                <state key="normal" title="Ver no Mapa "/>
+                                <connections>
+                                    <action selector="goToMapBtn:" destination="zR2-7z-9sb" eventType="touchUpInside" id="caO-25-bIG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -353,9 +363,11 @@
                             <constraint firstItem="30e-WV-8Us" firstAttribute="trailing" secondItem="gMG-mm-tq0" secondAttribute="trailing" id="HDr-Jj-fFB"/>
                             <constraint firstItem="XBJ-dh-g86" firstAttribute="height" relation="lessThanOrEqual" secondItem="Yvr-Yf-Gq9" secondAttribute="height" multiplier="0.04" id="Je7-1Y-U8q"/>
                             <constraint firstItem="PyM-fh-NdQ" firstAttribute="leading" secondItem="mG0-xe-8rP" secondAttribute="leading" id="NaW-yx-8js"/>
+                            <constraint firstItem="G2q-mG-mfd" firstAttribute="top" secondItem="30e-WV-8Us" secondAttribute="bottom" constant="37.5" id="RAf-Ku-Hwr"/>
                             <constraint firstItem="gMG-mm-tq0" firstAttribute="top" secondItem="PHc-9P-1tH" secondAttribute="bottom" constant="29" id="RGK-bm-h5H"/>
                             <constraint firstItem="MMa-ju-Ial" firstAttribute="top" secondItem="XBJ-dh-g86" secondAttribute="bottom" constant="42.5" id="U95-sn-OsL"/>
                             <constraint firstItem="mG0-xe-8rP" firstAttribute="top" secondItem="MXL-hl-TGd" secondAttribute="bottom" constant="27" id="Um6-eD-BOA"/>
+                            <constraint firstItem="xQz-SR-hye" firstAttribute="trailing" secondItem="G2q-mG-mfd" secondAttribute="trailing" constant="50" id="UzQ-2f-TlE"/>
                             <constraint firstItem="30e-WV-8Us" firstAttribute="leading" secondItem="gMG-mm-tq0" secondAttribute="leading" id="VUm-Hy-oLy"/>
                             <constraint firstItem="gMG-mm-tq0" firstAttribute="leading" secondItem="PHc-9P-1tH" secondAttribute="leading" id="WvS-8w-0tI"/>
                             <constraint firstItem="PyM-fh-NdQ" firstAttribute="trailing" secondItem="mG0-xe-8rP" secondAttribute="trailing" id="bMB-Ue-7fI"/>
@@ -367,6 +379,7 @@
                             <constraint firstItem="MMa-ju-Ial" firstAttribute="leading" secondItem="xQz-SR-hye" secondAttribute="leading" constant="60" id="njB-2Y-Dhp"/>
                             <constraint firstItem="mG0-xe-8rP" firstAttribute="trailing" secondItem="MXL-hl-TGd" secondAttribute="trailing" id="oem-ti-s5y"/>
                             <constraint firstItem="mG0-xe-8rP" firstAttribute="leading" secondItem="MXL-hl-TGd" secondAttribute="leading" id="rto-pX-J9X"/>
+                            <constraint firstItem="G2q-mG-mfd" firstAttribute="leading" secondItem="xQz-SR-hye" secondAttribute="leading" constant="50" id="sTc-6X-H1h"/>
                             <constraint firstItem="30e-WV-8Us" firstAttribute="top" secondItem="gMG-mm-tq0" secondAttribute="bottom" constant="27" id="wdp-zH-yjl"/>
                             <constraint firstItem="MMa-ju-Ial" firstAttribute="height" secondItem="Yvr-Yf-Gq9" secondAttribute="height" multiplier="0.142857" id="xnY-Fg-d8z"/>
                         </constraints>
@@ -384,7 +397,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ktf-5j-riy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346.37681159420293" y="-622.09821428571422"/>
+            <point key="canvasLocation" x="341" y="-654"/>
         </scene>
         <!--Select View Controller-->
         <scene sceneID="6V9-t0-jQZ">
@@ -395,54 +408,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corona" translatesAutoresizingMaskIntoConstraints="NO" id="FD3-5t-gMS">
-                                <rect key="frame" x="64" y="210" width="276" height="146"/>
+                                <rect key="frame" x="64" y="219" width="276" height="146"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corona" translatesAutoresizingMaskIntoConstraints="NO" id="roU-um-Xbt">
-                                <rect key="frame" x="64" y="498" width="276" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Casos no Mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24N-IL-YOg">
-                                <rect key="frame" x="126" y="181" width="129" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpi-VL-bEa">
-                                <rect key="frame" x="64" y="380" width="276" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpi-VL-bEa">
+                                <rect key="frame" x="64" y="373" width="286" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Ver os casos pelo mundo"/>
+                                <state key="normal" title="Paises com Corona"/>
                                 <connections>
-                                    <action selector="goWorld:" destination="gtv-1C-A9l" eventType="touchUpInside" id="GgJ-gl-UK9"/>
+                                    <action selector="goWorld:" destination="gtv-1C-A9l" eventType="touchUpInside" id="S8b-fc-Hmg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhj-RK-Zc2">
-                                <rect key="frame" x="64" y="659" width="276" height="30"/>
+                                <rect key="frame" x="64" y="698" width="276" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Ver casos no Brasil"/>
+                                <state key="normal" title="Estados Brasileiros com Corona "/>
                                 <connections>
-                                    <segue destination="gAe-0W-6iZ" kind="show" id="Wlx-Z7-P4U"/>
+                                    <action selector="goBrasilBtn:" destination="gtv-1C-A9l" eventType="touchUpInside" id="Y9Y-14-1SB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Corona Vírus!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFV-5V-j8A">
-                                <rect key="frame" x="103" y="111" width="208" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corona Vírus!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFV-5V-j8A">
+                                <rect key="frame" x="103" y="103" width="208" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Casos no Brasil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00x-Sp-mGC">
-                                <rect key="frame" x="131" y="456" width="118" height="21"/>
+                                <rect key="frame" x="118" y="464" width="178" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corona" translatesAutoresizingMaskIntoConstraints="NO" id="roU-um-Xbt">
+                                <rect key="frame" x="64" y="513" width="276" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Casos no Mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24N-IL-YOg">
+                                <rect key="frame" x="118" y="160" width="178" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vFV-5V-j8A" firstAttribute="leading" secondItem="BV3-OQ-1W0" secondAttribute="leading" constant="103" id="SmZ-Qc-t6m"/>
+                            <constraint firstItem="vFV-5V-j8A" firstAttribute="top" secondItem="BV3-OQ-1W0" secondAttribute="top" constant="15" id="aVt-v1-Sp1"/>
+                            <constraint firstItem="BV3-OQ-1W0" firstAttribute="trailing" secondItem="vFV-5V-j8A" secondAttribute="trailing" constant="103" id="gDM-6t-IFf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BV3-OQ-1W0"/>
                     </view>
                     <navigationItem key="navigationItem" id="hqu-OB-yeX"/>

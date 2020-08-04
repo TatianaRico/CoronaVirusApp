@@ -10,7 +10,8 @@ import Foundation
 
 class RequestAPIMap {
     
-    let baseURl: String =  "https://api.covid19api.com/dayone/country/south-africa/status/confirmed"
+    // MARK: - Properties
+    let baseURl: String =  "https://api.covid19api.com/"
     
     static let configuration: URLSessionConfiguration = {
         let configuration = URLSessionConfiguration.default
@@ -21,17 +22,17 @@ class RequestAPIMap {
     
     let session = URLSession(configuration: configuration)
     
-    func request(completion: @escaping (CoronaMapModel?, Bool)-> Void) {
+    // MARK: Methods
+    func request(country: String, completion: @escaping ([ApiMap]?, Bool)-> Void) {
         
-        guard let url = URL(string: baseURl) else{return}
+        guard let url = URL(string: baseURl.appending("dayone/country/\(country)/status/confirmed")) else{return}
         
         let task = session.dataTask(with: url) { (data, response, error) in
             guard let data = data else{return}
             guard let response = response as? HTTPURLResponse else{return}
             do {
-                
                 if response.statusCode == 200 {
-                    let json = try JSONDecoder.init().decode(CoronaMapModel.self, from: data)
+                    let json = try JSONDecoder().decode([ApiMap].self, from: data)
                     DispatchQueue.main.async {
                         completion(json, true)
                     }
@@ -40,6 +41,7 @@ class RequestAPIMap {
                 }
             }catch{
                 completion(nil, false)
+                print(error.localizedDescription)
             }
         }
         task.resume()

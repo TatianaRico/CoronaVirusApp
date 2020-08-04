@@ -10,6 +10,7 @@ import Foundation
 
 class ApiRest {
     
+    // MARK: - Properties
     let basePath: String = "https://covid19-brazil-api.now.sh/api/report/v1"
     static let configuration: URLSessionConfiguration = {
         let configuration = URLSessionConfiguration.default
@@ -20,6 +21,7 @@ class ApiRest {
     
     let session = URLSession(configuration: configuration)
     
+    // MARK: Methods
     func  request(completion: @escaping ([Corona]?, Bool)-> Void ) {
         guard let url = URL(string: basePath)  else {return}
         

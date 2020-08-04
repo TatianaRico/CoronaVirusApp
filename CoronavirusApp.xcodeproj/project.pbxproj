@@ -26,7 +26,6 @@
 		B97D2BB624A57F5B00FC6DC4 /* CoronaWorldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D2BB524A57F5B00FC6DC4 /* CoronaWorldTableViewCell.swift */; };
 		B981B97B24B65DA90055C11F /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B981B97A24B65DA90055C11F /* CadastroViewController.swift */; };
 		B9B08B43249D0B9E00DAA4A2 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B08B42249D0B9E00DAA4A2 /* SelectViewController.swift */; };
-		B9B08B4524A2918C00DAA4A2 /* RouteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B08B4424A2918C00DAA4A2 /* RouteApi.swift */; };
 		B9B08B4824A565F000DAA4A2 /* RequestAPiWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B08B4724A565F000DAA4A2 /* RequestAPiWorld.swift */; };
 		B9B08B4A24A56AE200DAA4A2 /* CoronaWorldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B08B4924A56AE200DAA4A2 /* CoronaWorldModel.swift */; };
 		B9B08B4D24A56F0200DAA4A2 /* CoronaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B08B4C24A56F0200DAA4A2 /* CoronaController.swift */; };
@@ -58,7 +57,6 @@
 		B97D2BB524A57F5B00FC6DC4 /* CoronaWorldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaWorldTableViewCell.swift; sourceTree = "<group>"; };
 		B981B97A24B65DA90055C11F /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		B9B08B42249D0B9E00DAA4A2 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
-		B9B08B4424A2918C00DAA4A2 /* RouteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteApi.swift; sourceTree = "<group>"; };
 		B9B08B4724A565F000DAA4A2 /* RequestAPiWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPiWorld.swift; sourceTree = "<group>"; };
 		B9B08B4924A56AE200DAA4A2 /* CoronaWorldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaWorldModel.swift; sourceTree = "<group>"; };
 		B9B08B4C24A56F0200DAA4A2 /* CoronaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoronaController.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				B92B5CC324827DD9001FDD1A /* ApiRest.swift */,
 				B9128D4D24B4BF0D0040E29F /* RequestAPIMap.swift */,
 				B9B08B4724A565F000DAA4A2 /* RequestAPiWorld.swift */,
-				B9B08B4424A2918C00DAA4A2 /* RouteApi.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -286,7 +283,6 @@
 				B92B5CC424827DD9001FDD1A /* ApiRest.swift in Sources */,
 				B97D2BB624A57F5B00FC6DC4 /* CoronaWorldTableViewCell.swift in Sources */,
 				B946625F24994A66007F499F /* DetailCoronaViewController.swift in Sources */,
-				B9B08B4524A2918C00DAA4A2 /* RouteApi.swift in Sources */,
 				B97D2BB424A5773E00FC6DC4 /* CoronaWorldController.swift in Sources */,
 				B92B5CD024848F54001FDD1A /* CoronaTableViewCell.swift in Sources */,
 				B92B5CC624843DD2001FDD1A /* CoronaModel.swift in Sources */,
