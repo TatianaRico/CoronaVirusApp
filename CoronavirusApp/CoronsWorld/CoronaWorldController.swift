@@ -11,12 +11,13 @@ import Foundation
 class CoronaWorldController {
     
     // MARK: - Properties
-    let controller = RequestApiWorld()
+   private let controller = RequestApiWorld()
     var model: [Country]?
     
     // MARK: Methods
     func getApi(completion: @escaping (Bool)-> Void) {
-        controller.request { (contry, success) in
+        controller.request { [weak self] (contry, success) in
+             guard let self = self else {return}
             if success {
                 self.model = contry
                 completion(true)

@@ -11,13 +11,13 @@ import Foundation
 class CoronaController {
     
      // MARK: - Properties
-    var controller = ApiRest()
+   private var controller = ApiRest()
     var model: [Corona]?
-
     
     // MARK: Methods
     func loadCorona(completion: @escaping (Bool) -> Void) {
-        controller.request {(corona, sucess) in
+        controller.request {[weak self](corona, sucess) in
+            guard let self = self else {return}
             if sucess {
                 self.model = corona
                 completion(true)

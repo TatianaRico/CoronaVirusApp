@@ -11,12 +11,13 @@ import UIKit
 class CoronaWorldTableViewController: UITableViewController {
     
     // MARK: - Properties
-    var controller = CoronaWorldController()
+    private var controller = CoronaWorldController()
     
     // MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        controller.getApi { (sucess) in
+        controller.getApi { [weak self](sucess) in
+            guard let self = self else {return}
             self.tableView.reloadData()
         }
     }

@@ -11,7 +11,7 @@ import Foundation
 class RequestAPIMap {
     
     // MARK: - Properties
-    let baseURl: String =  "https://api.covid19api.com/"
+    private let baseURl: String =  "https://api.covid19api.com/"
     
     static let configuration: URLSessionConfiguration = {
         let configuration = URLSessionConfiguration.default
@@ -20,7 +20,7 @@ class RequestAPIMap {
         return configuration
     }()
     
-    let session = URLSession(configuration: configuration)
+    private let session = URLSession(configuration: configuration)
     
     // MARK: Methods
     func request(country: String, completion: @escaping ([ApiMap]?, Bool)-> Void) {

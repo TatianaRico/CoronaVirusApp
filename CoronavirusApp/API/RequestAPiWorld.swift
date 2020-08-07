@@ -11,7 +11,7 @@ import Foundation
 class RequestApiWorld {
     
     // MARK: - Properties
-    let baseURL: String = "https://api.covid19api.com/summary"
+   private let baseURL: String = "https://api.covid19api.com/summary"
     
     static let configuration: URLSessionConfiguration = {
         let configuration = URLSessionConfiguration.default
@@ -20,7 +20,7 @@ class RequestApiWorld {
         
         return configuration
     }()
-    let session = URLSession(configuration: configuration)
+   private let session = URLSession(configuration: configuration)
     
     // MARK: Methods
     func request(completion: @escaping ([Country]?, Bool) -> Void) {
