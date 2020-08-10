@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>524847000493-m4d0mlf60p79upamj926qtr0ponqjgtt.apps.googleusercontent.com</string>
+	<string>1070870817724-ladnv86c7klp36rdqol3u2g9ubq9htdl.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.524847000493-m4d0mlf60p79upamj926qtr0ponqjgtt</string>
+	<string>com.googleusercontent.apps.1070870817724-ladnv86c7klp36rdqol3u2g9ubq9htdl</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAYHCpI2rrz0kTBdZjRLEBXZcDInULymME</string>
+	<string>AIzaSyC4TcQS3lV8DOQzMBdP2nA5Cn_rLKaTOb8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>524847000493</string>
+	<string>1070870817724</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>br.com.CoronavirusApp</string>
 	<key>PROJECT_ID</key>
-	<string>coronaapp-1702</string>
+	<string>coronaapp-225bf</string>
 	<key>STORAGE_BUCKET</key>
-	<string>coronaapp-1702.appspot.com</string>
+	<string>coronaapp-225bf.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:524847000493:ios:61791eb01cb0f5816a4f24</string>
+	<string>1:1070870817724:ios:093302135a26a59c18d9b9</string>
 	<key>DATABASE_URL</key>
-	<string>https://coronaapp-1702.firebaseio.com</string>
+	<string>https://coronaapp-225bf.firebaseio.com</string>
 </dict>
 </plist>

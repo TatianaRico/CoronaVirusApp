@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,9 @@
 		B9B08B4D24A56F0200DAA4A2 /* CoronaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B08B4C24A56F0200DAA4A2 /* CoronaController.swift */; };
 		B9B08B4F24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B08B4E24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift */; };
 		B9B08B5124A56FE600DAA4A2 /* CoronaWorldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B08B5024A56FE600DAA4A2 /* CoronaWorldTableViewController.swift */; };
+		B9EB1F6C24DDA0A8007F67A6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */; };
+		B9EB1F7224DDB498007F67A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9EB1F7124DDB497007F67A6 /* GoogleService-Info.plist */; };
+		B9EB1F7524DDB719007F67A6 /* ControllerCadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EB1F7424DDB719007F67A6 /* ControllerCadastro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		B9B08B4C24A56F0200DAA4A2 /* CoronaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoronaController.swift; sourceTree = "<group>"; };
 		B9B08B4E24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaWorldDetailViewController.swift; sourceTree = "<group>"; };
 		B9B08B5024A56FE600DAA4A2 /* CoronaWorldTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaWorldTableViewController.swift; sourceTree = "<group>"; };
+		B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = "Map /Alert.swift"; sourceTree = "<group>"; };
+		B9EB1F7124DDB497007F67A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B9EB1F7424DDB719007F67A6 /* ControllerCadastro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCadastro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,11 +145,13 @@
 				B92B5CB824827DBA001FDD1A /* Assets.xcassets */,
 				B92B5CBA24827DBA001FDD1A /* LaunchScreen.storyboard */,
 				B92B5CBD24827DBA001FDD1A /* Info.plist */,
+				B9EB1F7124DDB497007F67A6 /* GoogleService-Info.plist */,
 				B9B08B4B24A56E1800DAA4A2 /* CoronaBrasil */,
 				B97D2BB724B375EF00FC6DC4 /* API */,
 				B97D2BB824B3761A00FC6DC4 /* CoronsWorld */,
 				B9128D5124B516CA0040E29F /* Map  */,
-				B981B97A24B65DA90055C11F /* CadastroViewController.swift */,
+				B9EB1F7324DDB6DA007F67A6 /* Cadastro */,
+				B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */,
 			);
 			path = CoronavirusApp;
 			sourceTree = "<group>";
@@ -182,6 +190,15 @@
 			path = CoronaBrasil;
 			sourceTree = "<group>";
 		};
+		B9EB1F7324DDB6DA007F67A6 /* Cadastro */ = {
+			isa = PBXGroup;
+			children = (
+				B981B97A24B65DA90055C11F /* CadastroViewController.swift */,
+				B9EB1F7424DDB719007F67A6 /* ControllerCadastro.swift */,
+			);
+			path = Cadastro;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,6 +210,7 @@
 				B92B5CA824827DB6001FDD1A /* Sources */,
 				B92B5CA924827DB6001FDD1A /* Frameworks */,
 				B92B5CAA24827DB6001FDD1A /* Resources */,
+				5F2501609B4F3C02A10D416E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9EB1F7224DDB498007F67A6 /* GoogleService-Info.plist in Resources */,
 				B92B5CBC24827DBA001FDD1A /* LaunchScreen.storyboard in Resources */,
 				B92B5CB924827DBA001FDD1A /* Assets.xcassets in Resources */,
 				B92B5CB724827DB6001FDD1A /* Main.storyboard in Resources */,
@@ -250,6 +269,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5F2501609B4F3C02A10D416E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoronavirusApp/Pods-CoronavirusApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoronavirusApp/Pods-CoronavirusApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoronavirusApp/Pods-CoronavirusApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DE918C0079B7B882B7F487F8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,11 +321,13 @@
 				B946625F24994A66007F499F /* DetailCoronaViewController.swift in Sources */,
 				B97D2BB424A5773E00FC6DC4 /* CoronaWorldController.swift in Sources */,
 				B92B5CD024848F54001FDD1A /* CoronaTableViewCell.swift in Sources */,
+				B9EB1F6C24DDA0A8007F67A6 /* Alert.swift in Sources */,
 				B92B5CC624843DD2001FDD1A /* CoronaModel.swift in Sources */,
 				B9128D5024B4E48A0040E29F /* MapController.swift in Sources */,
 				B9B08B4A24A56AE200DAA4A2 /* CoronaWorldModel.swift in Sources */,
 				B9128D4C24B4BC2B0040E29F /* ApiMap.swift in Sources */,
 				B92B5CB424827DB6001FDD1A /* ViewController.swift in Sources */,
+				B9EB1F7524DDB719007F67A6 /* ControllerCadastro.swift in Sources */,
 				B9B08B4824A565F000DAA4A2 /* RequestAPiWorld.swift in Sources */,
 				B92B5CC82484500A001FDD1A /* CoronaTableViewController.swift in Sources */,
 				B9B08B4D24A56F0200DAA4A2 /* CoronaController.swift in Sources */,

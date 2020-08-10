@@ -200,7 +200,7 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Entrar"/>
                                 <connections>
-                                    <action selector="singUpBtn:" destination="ppr-rc-qwP" eventType="touchUpInside" id="Nv5-4r-oyn"/>
+                                    <action selector="singUpBtn:" destination="ppr-rc-qwP" eventType="touchUpInside" id="1Xu-n0-XOB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STv-b7-jT4">
@@ -209,7 +209,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="cadastroBtn:" destination="ppr-rc-qwP" eventType="touchUpInside" id="Bsg-zP-z3l"/>
+                                    <action selector="cadastroBtn:" destination="ppr-rc-qwP" eventType="touchUpInside" id="wAx-Aq-8oC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -235,7 +235,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="W84-jf-DKh"/>
                     <connections>
-                        <outlet property="cadastroBtn" destination="STv-b7-jT4" id="NdH-NG-cCU"/>
+                        <outlet property="cadastroBtn" destination="STv-b7-jT4" id="feb-Ms-NBA"/>
                         <outlet property="emailTextField" destination="gnK-rT-6Hj" id="rXx-4r-eEc"/>
                         <outlet property="loginBtn" destination="3iq-oG-FJZ" id="UVE-Cm-Zcs"/>
                         <outlet property="passwordTextField" destination="eau-Th-526" id="weC-6d-ftr"/>

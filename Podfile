@@ -6,7 +6,6 @@ target 'CoronavirusApp' do
   use_frameworks!
 
   # Pods for CoronavirusApp
- pod 'Firebase/Auth'
-
-
+  pod 'Firebase/Auth'
+ 
 end
