@@ -9,11 +9,12 @@
 import UIKit
 
 class CoronaWorldTableViewCell: UITableViewCell {
-
+    
+    // MARK: - IBOutlets
     @IBOutlet weak var contryLb: UILabel!
-  
+    
+    // MARK: Methods
     func setup(corona: Country) {
         contryLb.text = corona.country
     }
-
 }

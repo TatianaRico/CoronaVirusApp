@@ -10,26 +10,30 @@ import Foundation
 
 class MapController {
     
-    var modelController: CoronaMapModel?
+    // MARK: - Properties
+    var modelController: [ApiMap]?
+    var controller = RequestAPIMap()
     
-    var request = RequestAPIMap()
-    
-    
-    func getAPIMap() {
-        request.request {[weak self](model, sucess) in
+    // MARK: Methods
+    func getAPIMap(country: String, completion: @escaping (Bool) -> Void) {
+        controller.request(country: country) {[weak self](model, sucess) in
             if sucess {
                 self?.modelController = model
+                completion(true)
             }
+            completion(false)
         }
     }
     
     func latitude() -> Double {
-        let latitude =  -23.5489
+        let model = modelController?.first
+        let latitude = Double(model?.lat ?? "") ?? 0
         return latitude
     }
+    
     func longitude() -> Double {
-        let long =  -46.6388
-        
-           return long
-       }
+        let model = modelController?.first
+        let long =  Double(model?.lon ?? "") ?? 0
+        return long
+    }
 }

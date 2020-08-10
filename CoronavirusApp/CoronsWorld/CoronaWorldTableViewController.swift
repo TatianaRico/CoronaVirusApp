@@ -10,27 +10,29 @@ import UIKit
 
 class CoronaWorldTableViewController: UITableViewController {
     
-    var controller = CoronaWorldController()
-
+    // MARK: - Properties
+    private var controller = CoronaWorldController()
+    
+    // MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        controller.getApi { (sucess) in
+        controller.getApi { [weak self](sucess) in
+            guard let self = self else {return}
             self.tableView.reloadData()
         }
     }
-   
+    
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return controller.numberOfRow()
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CoronaWorldTableViewCell
-
+        
         cell?.setup(corona: controller.cellForRow(indexPath: indexPath))
         
-
+        
         return cell ?? CoronaWorldTableViewCell()
     }
     
@@ -38,7 +40,7 @@ class CoronaWorldTableViewController: UITableViewController {
         if let vc = storyboard?.instantiateViewController(identifier: "CoronaWorldDetailViewController")  as? CoronaWorldDetailViewController {
             
             vc.model = controller.cellForRow(indexPath: indexPath)
-        navigationController?.pushViewController(vc, animated: true)
-    }
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

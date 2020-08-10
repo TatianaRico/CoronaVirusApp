@@ -9,13 +9,13 @@
 import Foundation
 
 //MARK: - CoronaMapModel
-struct CoronaMapModel: Codable {
+struct ApiMap: Codable {
     let country: String?
     let countryCode: String?
     let province, city, cityCode, lat: String?
     let lon: String?
     let cases: Int?
-    let status: Status?
+    let status: String?
     let date: String?
 
     enum CodingKeys: String, CodingKey {
@@ -32,6 +32,10 @@ struct CoronaMapModel: Codable {
     }
 }
 
+enum County: String, Codable {
+    case southAfrica = "South Africa"
+}
+
 enum CountryCode: String, Codable {
     case za = "ZA"
 }
@@ -39,5 +43,3 @@ enum CountryCode: String, Codable {
 enum Status: String, Codable {
     case confirmed = "confirmed"
 }
-
-typealias CoronaMapModelElement = [CoronaMapModel]

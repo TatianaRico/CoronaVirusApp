@@ -7,12 +7,12 @@
 //
 import Foundation
 
-// MARK: - Corona
+// MARK: - CoronaModel
 struct CoronaModel: Codable {
     let data: [Corona]?
 }
 
-// MARK: - Datum
+// MARK: - Corona
 struct Corona: Codable {
     let uid: Int?
     let uf, state: String?

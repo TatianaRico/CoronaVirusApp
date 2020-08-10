@@ -10,11 +10,14 @@ import Foundation
 
 class CoronaController {
     
-    var api = ApiRest()
+     // MARK: - Properties
+   private var controller = ApiRest()
     var model: [Corona]?
     
+    // MARK: Methods
     func loadCorona(completion: @escaping (Bool) -> Void) {
-        api.request {(corona, sucess) in
+        controller.request {[weak self](corona, sucess) in
+            guard let self = self else {return}
             if sucess {
                 self.model = corona
                 completion(true)
@@ -22,9 +25,9 @@ class CoronaController {
         }
     }
     
-func numberOfRow() -> Int {
-    return model?.count ?? 0
-}
+    func numberOfRow() -> Int {
+        return model?.count ?? 0
+    }
     
     func cellForRow(indexPath: IndexPath) -> Corona {
         return model?[indexPath.row] ?? Corona(uid: 0, uf: "", state: "", cases: 0, deaths: 0, suspects: 0, refuses: 0, datetime: .none)

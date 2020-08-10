@@ -10,7 +10,8 @@ import Foundation
 
 class RequestApiWorld {
     
-    let baseURL: String = "https://api.covid19api.com/summary"
+    // MARK: - Properties
+   private let baseURL: String = "https://api.covid19api.com/summary"
     
     static let configuration: URLSessionConfiguration = {
         let configuration = URLSessionConfiguration.default
@@ -19,8 +20,9 @@ class RequestApiWorld {
         
         return configuration
     }()
-    let session = URLSession(configuration: configuration)
+   private let session = URLSession(configuration: configuration)
     
+    // MARK: Methods
     func request(completion: @escaping ([Country]?, Bool) -> Void) {
         
         guard let url = URL(string: baseURL) else{return}
@@ -33,6 +35,7 @@ class RequestApiWorld {
             if response.statusCode == 200 {
                 do {
                     let json = try JSONDecoder.init().decode(CoronaWorldModel.self, from: data)
+                    print(json)
                     DispatchQueue.main.async {
                         completion(json.countries, true)
                     }

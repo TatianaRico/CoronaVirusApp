@@ -10,7 +10,8 @@ import Foundation
 
 class ApiRest {
     
-    let basePath: String = "https://covid19-brazil-api.now.sh/api/report/v1"
+    // MARK: - Properties
+   private let basePath: String = "https://covid19-brazil-api.now.sh/api/report/v1"
     static let configuration: URLSessionConfiguration = {
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 30
@@ -18,8 +19,9 @@ class ApiRest {
         return configuration
     }()
     
-    let session = URLSession(configuration: configuration)
+   private let session = URLSession(configuration: configuration)
     
+    // MARK: Methods
     func  request(completion: @escaping ([Corona]?, Bool)-> Void ) {
         guard let url = URL(string: basePath)  else {return}
         
