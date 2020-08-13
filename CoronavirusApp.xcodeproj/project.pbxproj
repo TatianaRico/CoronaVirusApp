@@ -36,6 +36,9 @@
 		B9CB11C924E47E7300A6361A /* CoronaWord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB11C824E47E7300A6361A /* CoronaWord.storyboard */; };
 		B9CB11CB24E47E8900A6361A /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB11CA24E47E8900A6361A /* Map.storyboard */; };
 		B9CB11CD24E47EA400A6361A /* Cadastro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB11CC24E47EA400A6361A /* Cadastro.storyboard */; };
+		B9CB11D124E4809900A6361A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB11D024E4809900A6361A /* Coordinator.swift */; };
+		B9CB11D424E4827800A6361A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB11D324E4827800A6361A /* AppCoordinator.swift */; };
+		B9CB11D624E485F400A6361A /* SelectCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB11D524E485F400A6361A /* SelectCoordinator.swift */; };
 		B9EB1F6C24DDA0A8007F67A6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */; };
 		B9EB1F7224DDB498007F67A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9EB1F7124DDB497007F67A6 /* GoogleService-Info.plist */; };
 		B9EB1F7524DDB719007F67A6 /* ControllerCadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EB1F7424DDB719007F67A6 /* ControllerCadastro.swift */; };
@@ -75,6 +78,9 @@
 		B9CB11C824E47E7300A6361A /* CoronaWord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoronaWord.storyboard; sourceTree = "<group>"; };
 		B9CB11CA24E47E8900A6361A /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		B9CB11CC24E47EA400A6361A /* Cadastro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cadastro.storyboard; sourceTree = "<group>"; };
+		B9CB11D024E4809900A6361A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B9CB11D324E4827800A6361A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B9CB11D524E485F400A6361A /* SelectCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCoordinator.swift; sourceTree = "<group>"; };
 		B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = "Map /Alert.swift"; sourceTree = "<group>"; };
 		B9EB1F7124DDB497007F67A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B9EB1F7424DDB719007F67A6 /* ControllerCadastro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCadastro.swift; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 			children = (
 				B9B08B42249D0B9E00DAA4A2 /* SelectViewController.swift */,
 				B9CB11C424E47E4A00A6361A /* Select.storyboard */,
+				B9CB11D524E485F400A6361A /* SelectCoordinator.swift */,
 			);
 			path = Select;
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 			children = (
 				B92B5CAF24827DB6001FDD1A /* AppDelegate.swift */,
 				B92B5CB124827DB6001FDD1A /* SceneDelegate.swift */,
+				B9CB11D324E4827800A6361A /* AppCoordinator.swift */,
 				B911A6DC24D0C88F00D8DB16 /* Select */,
 				B92B5CB524827DB6001FDD1A /* Main.storyboard */,
 				B92B5CB824827DBA001FDD1A /* Assets.xcassets */,
@@ -164,6 +172,7 @@
 				B9128D5124B516CA0040E29F /* Map  */,
 				B9EB1F7324DDB6DA007F67A6 /* Cadastro */,
 				B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */,
+				B9CB11D224E4809E00A6361A /* Protocolo */,
 			);
 			path = CoronavirusApp;
 			sourceTree = "<group>";
@@ -202,6 +211,14 @@
 				B9CB11C624E47E5F00A6361A /* CoronaBrasil.storyboard */,
 			);
 			path = CoronaBrasil;
+			sourceTree = "<group>";
+		};
+		B9CB11D224E4809E00A6361A /* Protocolo */ = {
+			isa = PBXGroup;
+			children = (
+				B9CB11D024E4809900A6361A /* Coordinator.swift */,
+			);
+			path = Protocolo;
 			sourceTree = "<group>";
 		};
 		B9EB1F7324DDB6DA007F67A6 /* Cadastro */ = {
@@ -347,11 +364,14 @@
 				B9B08B4A24A56AE200DAA4A2 /* CoronaWorldModel.swift in Sources */,
 				B9128D4C24B4BC2B0040E29F /* ApiMap.swift in Sources */,
 				B92B5CB424827DB6001FDD1A /* ViewController.swift in Sources */,
+				B9CB11D424E4827800A6361A /* AppCoordinator.swift in Sources */,
 				B9EB1F7524DDB719007F67A6 /* ControllerCadastro.swift in Sources */,
 				B9B08B4824A565F000DAA4A2 /* RequestAPiWorld.swift in Sources */,
 				B92B5CC82484500A001FDD1A /* CoronaTableViewController.swift in Sources */,
+				B9CB11D624E485F400A6361A /* SelectCoordinator.swift in Sources */,
 				B9B08B4D24A56F0200DAA4A2 /* CoronaController.swift in Sources */,
 				B92B5CB024827DB6001FDD1A /* AppDelegate.swift in Sources */,
+				B9CB11D124E4809900A6361A /* Coordinator.swift in Sources */,
 				B9B08B4F24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift in Sources */,
 				B9128D4E24B4BF0D0040E29F /* RequestAPIMap.swift in Sources */,
 				B9B08B5124A56FE600DAA4A2 /* CoronaWorldTableViewController.swift in Sources */,
