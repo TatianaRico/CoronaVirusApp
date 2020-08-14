@@ -16,12 +16,11 @@ class AppCoordinator: Coordinator {
     
     init() {
         navigationController = UINavigationController()
-        navigationController.navigationBar.prefersLargeTitles = true
-        navigationController.navigationBar.backgroundColor = .yellow
+        //navigationController.navigationBar.prefersLargeTitles = true
     }
     
     func star() {
-        let childCoordinator = SelectCoordinator(navigationController: navigationController)
+        let childCoordinator = CadastroCoordinator(navigationController: navigationController)
         childCoordinator.parentCoordinator = self
         add(childCoordinator: childCoordinator)
         childCoordinator.star()

@@ -19,6 +19,7 @@ class DetailCoronaViewController: UIViewController {
     
     // MARK: - Properties
     var model: Corona?
+    var coordinator: DetailBrCoordinator?
     
     // MARK: - Super Methods
     override func viewDidLoad() {

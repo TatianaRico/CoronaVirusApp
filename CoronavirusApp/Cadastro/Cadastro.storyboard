@@ -10,7 +10,7 @@
         <!--Cadastro View Controller-->
         <scene sceneID="FKR-0h-QaL">
             <objects>
-                <viewController id="QxN-Qc-KnF" customClass="CadastroViewController" customModule="CoronavirusApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CadastroViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QxN-Qc-KnF" customClass="CadastroViewController" customModule="CoronavirusApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="km3-RK-cLI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

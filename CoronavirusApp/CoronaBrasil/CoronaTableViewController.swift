@@ -12,6 +12,7 @@ class CoronaTableViewController: UITableViewController {
     
     // MARK: - Properties
     private var controller = CoronaController()
+    weak var coordinator: CoronoBrCoordinator?
     
     // MARK: - Super Methods
     override func viewDidLoad() {
@@ -38,10 +39,8 @@ class CoronaTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc  = storyboard?.instantiateViewController(identifier: "DetailCoronaViewController") as? DetailCoronaViewController {
-            vc.model = controller.cellForRow(indexPath: indexPath)
-            present(vc, animated: true, completion: nil)
-        }
+        let coronaSelec = controller.cellForRow(indexPath: indexPath)
+        coordinator?.goTableView(corona: coronaSelec)
     }
 }
 

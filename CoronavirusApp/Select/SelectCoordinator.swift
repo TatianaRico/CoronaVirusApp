@@ -16,14 +16,29 @@ class SelectCoordinator: Coordinator {
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+         navigationController.navigationBar.isHidden = false
     }
     
     func star() {
         let storyboard = UIStoryboard(name: "Select", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "SelectViewController") as? SelectViewController
+        vc?.coordinator = self
         navigationController.pushViewController(vc ?? SelectViewController(), animated: false)
     }
     
+    func goCoronaBrasil() {
+        let childCoordinator = CoronoBrCoordinator(navigationController: navigationController)
+                      childCoordinator.parentCoordinator = self
+                      add(childCoordinator: childCoordinator)
+                      childCoordinator.star()
+    }
+    
+    func goCoronaWorld() {
+        let childCoordinator = CoronaWorldCoordinator(navigationController: navigationController)
+        childCoordinator.parentCoordinator = self
+        add(childCoordinator: childCoordinator)
+        childCoordinator.star()
+    }
     
 }
 

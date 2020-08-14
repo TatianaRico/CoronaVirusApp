@@ -9,7 +9,10 @@
 import UIKit
 
 class SelectViewController: UIViewController {
+    
 
+    var coordinator: SelectCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
@@ -19,14 +22,10 @@ class SelectViewController: UIViewController {
     }
     
     @IBAction func goWorld(_ sender: UIButton) {
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "CoronaWorldTableViewController") as? CoronaWorldTableViewController else{return}
-        self.navigationController?.pushViewController(vc, animated: true)
+        coordinator?.goCoronaWorld()
     }
 
     @IBAction func goBrasilBtn(_ sender: UIButton) {
-  
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "CoronaTableViewController") as? CoronaTableViewController else{return}
-        
-        self.navigationController?.pushViewController(vc, animated: true)
+        coordinator?.goCoronaBrasil()
     }
 }
