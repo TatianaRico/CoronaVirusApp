@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Corona Table View Controller-->
+        <scene sceneID="VE1-qR-Xqa">
+            <objects>
+                <tableViewController storyboardIdentifier="CoronaTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jbY-rE-pLl" customClass="CoronaTableViewController" customModule="CoronavirusApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dEQ-cX-HCW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="109" id="Dmr-Sh-i0c" customClass="CoronaTableViewCell" customModule="CoronavirusApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="109"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dmr-Sh-i0c" id="w5k-16-S0P">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aH-Qo-vgR">
+                                            <rect key="frame" x="20" y="24" width="374" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7aH-Qo-vgR" firstAttribute="trailing" secondItem="w5k-16-S0P" secondAttribute="trailingMargin" id="d4t-9K-cup"/>
+                                        <constraint firstItem="7aH-Qo-vgR" firstAttribute="leading" secondItem="w5k-16-S0P" secondAttribute="leadingMargin" id="mNY-Fu-gQZ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="7aH-Qo-vgR" secondAttribute="bottom" constant="30" id="p0s-0E-dPd"/>
+                                        <constraint firstItem="7aH-Qo-vgR" firstAttribute="top" secondItem="w5k-16-S0P" secondAttribute="topMargin" constant="13" id="r33-qX-anK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLb" destination="7aH-Qo-vgR" id="Q0a-hP-AmA"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jbY-rE-pLl" id="ydR-xe-W9A"/>
+                            <outlet property="delegate" destination="jbY-rE-pLl" id="uzg-bJ-VSX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="VIf-in-gcG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8cl-5C-nB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-520" y="84"/>
+        </scene>
+        <!--Detail Corona View Controller-->
+        <scene sceneID="yRs-kb-AcT">
+            <objects>
+                <viewController storyboardIdentifier="DetailCoronaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hWA-AI-JPq" customClass="DetailCoronaViewController" customModule="CoronavirusApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bim-EX-KAG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corona" translatesAutoresizingMaskIntoConstraints="NO" id="iqs-gC-SPY">
+                                <rect key="frame" x="20" y="64" width="374" height="269"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jA-EP-iiO">
+                                <rect key="frame" x="20" y="373" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numero de caso " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABZ-D3-Xew">
+                                <rect key="frame" x="20" y="433.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numero de Mortes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32Z-sM-YiH">
+                                <rect key="frame" x="20" y="494" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numero de suspeitos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbw-8j-E3J">
+                                <rect key="frame" x="20" y="554.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3jA-EP-iiO" firstAttribute="leading" secondItem="iqs-gC-SPY" secondAttribute="leading" id="5G0-bC-lsq"/>
+                            <constraint firstItem="32Z-sM-YiH" firstAttribute="trailing" secondItem="ABZ-D3-Xew" secondAttribute="trailing" id="5GS-79-u3H"/>
+                            <constraint firstItem="iqs-gC-SPY" firstAttribute="top" secondItem="80R-aY-MHp" secondAttribute="top" constant="20" id="DBm-t7-85A"/>
+                            <constraint firstItem="32Z-sM-YiH" firstAttribute="top" secondItem="ABZ-D3-Xew" secondAttribute="bottom" constant="40" id="FPh-fy-YVG"/>
+                            <constraint firstItem="rbw-8j-E3J" firstAttribute="leading" secondItem="32Z-sM-YiH" secondAttribute="leading" id="IiW-TL-DFb"/>
+                            <constraint firstItem="rbw-8j-E3J" firstAttribute="trailing" secondItem="32Z-sM-YiH" secondAttribute="trailing" id="PuU-wd-pzh"/>
+                            <constraint firstItem="ABZ-D3-Xew" firstAttribute="trailing" secondItem="3jA-EP-iiO" secondAttribute="trailing" id="RKI-rZ-CPO"/>
+                            <constraint firstItem="3jA-EP-iiO" firstAttribute="top" secondItem="iqs-gC-SPY" secondAttribute="bottom" constant="40" id="Veh-Sf-vMj"/>
+                            <constraint firstItem="80R-aY-MHp" firstAttribute="trailing" secondItem="iqs-gC-SPY" secondAttribute="trailing" constant="20" id="cP0-eD-z9H"/>
+                            <constraint firstItem="rbw-8j-E3J" firstAttribute="top" secondItem="32Z-sM-YiH" secondAttribute="bottom" constant="40" id="gT6-fZ-K11"/>
+                            <constraint firstItem="3jA-EP-iiO" firstAttribute="trailing" secondItem="iqs-gC-SPY" secondAttribute="trailing" id="hyv-df-JMC"/>
+                            <constraint firstItem="ABZ-D3-Xew" firstAttribute="top" secondItem="3jA-EP-iiO" secondAttribute="bottom" constant="40" id="lFp-qO-YfH"/>
+                            <constraint firstItem="iqs-gC-SPY" firstAttribute="height" secondItem="Bim-EX-KAG" secondAttribute="height" multiplier="0.3" id="n2f-nr-4uu"/>
+                            <constraint firstItem="ABZ-D3-Xew" firstAttribute="leading" secondItem="3jA-EP-iiO" secondAttribute="leading" id="xzD-QU-deZ"/>
+                            <constraint firstItem="32Z-sM-YiH" firstAttribute="leading" secondItem="ABZ-D3-Xew" secondAttribute="leading" id="yaZ-rm-ze5"/>
+                            <constraint firstItem="iqs-gC-SPY" firstAttribute="leading" secondItem="80R-aY-MHp" secondAttribute="leading" constant="20" id="zU5-yR-Wtd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="80R-aY-MHp"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="iqs-gC-SPY" id="jRk-kW-4fa"/>
+                        <outlet property="numberCaseLb" destination="ABZ-D3-Xew" id="fKG-K4-yll"/>
+                        <outlet property="numberDeathLb" destination="32Z-sM-YiH" id="fEg-z3-DlH"/>
+                        <outlet property="numberSuspectLb" destination="rbw-8j-E3J" id="EZ8-F2-kd3"/>
+                        <outlet property="stateLb" destination="3jA-EP-iiO" id="Kwj-7Q-Jjs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8k-jv-enD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="corona" width="900" height="506"/>
+    </resources>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select View Controller-->
+        <scene sceneID="9Hr-Sp-DF8">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F92-vF-QNa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="SelectViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gfy-Tw-NEr" customClass="SelectViewController" customModule="CoronavirusApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uhX-qh-A9v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corona" translatesAutoresizingMaskIntoConstraints="NO" id="6gh-c1-Ak3">
+                                <rect key="frame" x="64" y="219" width="276" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkb-jb-HXK">
+                                <rect key="frame" x="64" y="373" width="286" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Paises com Corona"/>
+                                <connections>
+                                    <action selector="goWorld:" destination="gfy-Tw-NEr" eventType="touchUpInside" id="r4I-PE-aJ4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jp3-2e-Q4d">
+                                <rect key="frame" x="64" y="698" width="276" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Estados Brasileiros com Corona "/>
+                                <connections>
+                                    <action selector="goBrasilBtn:" destination="gfy-Tw-NEr" eventType="touchUpInside" id="NgT-FY-Ubh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corona Vírus!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgB-dL-7x2">
+                                <rect key="frame" x="103" y="59" width="208" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Casos no Brasil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQ8-DY-pkx">
+                                <rect key="frame" x="118" y="464" width="178" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corona" translatesAutoresizingMaskIntoConstraints="NO" id="vSH-rN-Dgu">
+                                <rect key="frame" x="64" y="513" width="276" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Casos no Mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyh-l9-4or">
+                                <rect key="frame" x="118" y="160" width="178" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HgB-dL-7x2" firstAttribute="top" secondItem="PR0-Qi-d3e" secondAttribute="top" constant="15" id="BnF-BD-H6P"/>
+                            <constraint firstItem="HgB-dL-7x2" firstAttribute="leading" secondItem="PR0-Qi-d3e" secondAttribute="leading" constant="103" id="D72-Vn-ATg"/>
+                            <constraint firstItem="PR0-Qi-d3e" firstAttribute="trailing" secondItem="HgB-dL-7x2" secondAttribute="trailing" constant="103" id="sBc-Hp-4tt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PR0-Qi-d3e"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZKC-Ol-vqY"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1341" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="corona" width="900" height="506"/>
+    </resources>
+</document>

@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet weak var mapView: MKMapView!
@@ -17,13 +17,15 @@ class ViewController: UIViewController {
     // MARK: - Properties
     lazy var locationManeger = CLLocationManager()
     var controller = MapController()
-    var viewController: String?
+    var country: String?
+    weak var coordinator: MapCoordinator?
+    
     
     // MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManeger.requestWhenInUseAuthorization()
-        controller.getAPIMap(country: viewController ?? "", completion: { (sucess) in
+        controller.getAPIMap(country: country ?? "", completion: { (sucess) in
             if sucess {
                 self.configurateMap()
             }
