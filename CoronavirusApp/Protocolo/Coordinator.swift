@@ -33,7 +33,8 @@ extension Coordinator {
     
     func back() {}
     
-    func childDidFinish(_ child: Coordinator) {
+    func childDidFinish(_ child: Coordinator?) {
+        guard let child = child else {return}
         remove(childCoordinator: child)
     }
 }

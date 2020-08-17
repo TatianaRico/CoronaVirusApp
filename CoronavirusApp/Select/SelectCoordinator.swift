@@ -18,6 +18,9 @@ class SelectCoordinator: Coordinator {
         self.navigationController = navigationController
          navigationController.navigationBar.isHidden = false
     }
+    deinit {
+        print("SelectCoordinator deinit")
+    }
     
     func star() {
         let storyboard = UIStoryboard(name: "Select", bundle: nil)
@@ -40,5 +43,8 @@ class SelectCoordinator: Coordinator {
         childCoordinator.star()
     }
     
+    func childDidFinish(_ child: Coordinator) {
+          parentCoordinator?.childDidFinish(self)
+    }
 }
 

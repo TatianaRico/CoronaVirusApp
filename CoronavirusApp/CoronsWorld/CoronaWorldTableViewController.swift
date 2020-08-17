@@ -23,6 +23,11 @@ class CoronaWorldTableViewController: UITableViewController {
         }
     }
     
+    deinit {
+        coordinator?.childDidFinish(coordinator)
+        print("CoronaWorldTableViewController de init")
+    }
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return controller.numberOfRow()

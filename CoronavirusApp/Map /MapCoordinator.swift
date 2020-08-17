@@ -9,7 +9,7 @@
 import UIKit
 
 class MapCoordinator: Coordinator {
-    
+
     var navigationController: UINavigationController
     var childCoordinator: [Coordinator] = []
     var parentCoordinator: Coordinator?
@@ -25,5 +25,7 @@ class MapCoordinator: Coordinator {
         navigationController.pushViewController(vc ?? MapViewController(), animated: true)
     }
     
-    
+    func childDidFinish(_ child: Coordinator) {
+        parentCoordinator?.childDidFinish(self)
+    }
 }

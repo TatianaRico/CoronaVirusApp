@@ -27,6 +27,11 @@ class DetailCoronaViewController: UIViewController {
         setup()
     }
     
+    deinit {
+           coordinator?.childDidFinish(coordinator)
+            print("CoronaTableViewController deinit")
+      }
+    
     // MARK: Methods
     func setup() {
         stateLb.text = "Estado \(model?.state ?? "")"

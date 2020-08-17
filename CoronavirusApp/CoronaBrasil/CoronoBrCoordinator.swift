@@ -33,4 +33,7 @@ class CoronoBrCoordinator: Coordinator {
                         childCoordinator.star()
     }
     
+    func childDidFinish(_ child: Coordinator) {
+        parentCoordinator?.childDidFinish(self)
+    }
 }

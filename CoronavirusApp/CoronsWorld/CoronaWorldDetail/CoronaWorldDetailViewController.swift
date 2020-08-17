@@ -29,6 +29,11 @@ class CoronaWorldDetailViewController: UIViewController {
         setup()
     }
     
+    deinit {
+        coordinator?.childDidFinish(coordinator)
+        print("CoronaWorldDetailViewController de init")
+    }
+    
     // MARK: Methods
     func setup() {
         self.stateLb.text = model?.country

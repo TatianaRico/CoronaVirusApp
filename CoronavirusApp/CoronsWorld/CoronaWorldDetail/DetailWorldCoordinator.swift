@@ -2,7 +2,7 @@
 //  DetailWorldCoordinator.swift
 //  CoronavirusApp
 //
-//  Created by Tatiana Rico on 13/08/20.
+//  Created by Tatiana Rico on 17/08/20.
 //  Copyright © 2020 Tatiana Rico. All rights reserved.
 //
 
@@ -21,7 +21,7 @@ class DetailWorldCoordinator: Coordinator {
     }
     
     func star() {
-        let storyboard = UIStoryboard(name: "CoronaWord", bundle: nil)
+        let storyboard = UIStoryboard(name: "DetailWorld", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "CoronaWorldDetailViewController") as? CoronaWorldDetailViewController
         vc?.coordinator = self
         vc?.model = self.country
@@ -34,5 +34,8 @@ class DetailWorldCoordinator: Coordinator {
         add(childCoordinator: childCoordinator)
         childCoordinator.star()
     }
+    
+    func childDidFinish(_ child: Coordinator) {
+        parentCoordinator?.childDidFinish(child)
+    }
 }
-

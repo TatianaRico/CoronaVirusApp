@@ -30,6 +30,11 @@ class MapViewController: UIViewController {
                 self.configurateMap()
             }
         })}
+   
+    deinit {
+           coordinator?.childDidFinish(coordinator)
+           print("MapViewController deinit")
+       }
     
     // MARK: Methods
     func configurateMap() {

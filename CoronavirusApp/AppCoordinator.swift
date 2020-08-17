@@ -16,7 +16,6 @@ class AppCoordinator: Coordinator {
     
     init() {
         navigationController = UINavigationController()
-        //navigationController.navigationBar.prefersLargeTitles = true
     }
     
     func star() {
@@ -24,6 +23,9 @@ class AppCoordinator: Coordinator {
         childCoordinator.parentCoordinator = self
         add(childCoordinator: childCoordinator)
         childCoordinator.star()
-        
+    }
+    
+    func childDidFinish(_ child: Coordinator) {
+        parentCoordinator?.childDidFinish(self)
     }
 }
