@@ -31,6 +31,8 @@ class CoronaWorldCoordinator: Coordinator {
         add(childCoordinator: childCoordinator)
         childCoordinator.star()
     }
-    
-    
+    func childDidFinish(_ child: Coordinator) {
+        parentCoordinator?.childDidFinish(self)
+       }
+       
 }

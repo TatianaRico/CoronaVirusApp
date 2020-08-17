@@ -14,7 +14,6 @@
 		B92B5CB024827DB6001FDD1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CAF24827DB6001FDD1A /* AppDelegate.swift */; };
 		B92B5CB224827DB6001FDD1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CB124827DB6001FDD1A /* SceneDelegate.swift */; };
 		B92B5CB424827DB6001FDD1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CB324827DB6001FDD1A /* MapViewController.swift */; };
-		B92B5CB724827DB6001FDD1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92B5CB524827DB6001FDD1A /* Main.storyboard */; };
 		B92B5CB924827DBA001FDD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B92B5CB824827DBA001FDD1A /* Assets.xcassets */; };
 		B92B5CBC24827DBA001FDD1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92B5CBA24827DBA001FDD1A /* LaunchScreen.storyboard */; };
 		B92B5CC424827DD9001FDD1A /* ApiRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CC324827DD9001FDD1A /* ApiRest.swift */; };
@@ -31,6 +30,7 @@
 		B9B08B4D24A56F0200DAA4A2 /* CoronaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B08B4C24A56F0200DAA4A2 /* CoronaController.swift */; };
 		B9B08B4F24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B08B4E24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift */; };
 		B9B08B5124A56FE600DAA4A2 /* CoronaWorldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B08B5024A56FE600DAA4A2 /* CoronaWorldTableViewController.swift */; };
+		B9B7F41424EAF9F000A747AA /* CoronaDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B7F41324EAF9F000A747AA /* CoronaDetail.storyboard */; };
 		B9CB11C524E47E4A00A6361A /* Select.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB11C424E47E4A00A6361A /* Select.storyboard */; };
 		B9CB11C724E47E5F00A6361A /* CoronaBrasil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB11C624E47E5F00A6361A /* CoronaBrasil.storyboard */; };
 		B9CB11C924E47E7300A6361A /* CoronaWord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB11C824E47E7300A6361A /* CoronaWord.storyboard */; };
@@ -61,7 +61,6 @@
 		B92B5CAF24827DB6001FDD1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B92B5CB124827DB6001FDD1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B92B5CB324827DB6001FDD1A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		B92B5CB624827DB6001FDD1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B92B5CB824827DBA001FDD1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B92B5CBB24827DBA001FDD1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B92B5CBD24827DBA001FDD1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +78,7 @@
 		B9B08B4C24A56F0200DAA4A2 /* CoronaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoronaController.swift; sourceTree = "<group>"; };
 		B9B08B4E24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaWorldDetailViewController.swift; sourceTree = "<group>"; };
 		B9B08B5024A56FE600DAA4A2 /* CoronaWorldTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaWorldTableViewController.swift; sourceTree = "<group>"; };
+		B9B7F41324EAF9F000A747AA /* CoronaDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoronaDetail.storyboard; sourceTree = "<group>"; };
 		B9CB11C424E47E4A00A6361A /* Select.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Select.storyboard; sourceTree = "<group>"; };
 		B9CB11C624E47E5F00A6361A /* CoronaBrasil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoronaBrasil.storyboard; sourceTree = "<group>"; };
 		B9CB11C824E47E7300A6361A /* CoronaWord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoronaWord.storyboard; sourceTree = "<group>"; };
@@ -145,6 +145,7 @@
 				B9128D4F24B4E48A0040E29F /* MapController.swift */,
 				B9CB11CA24E47E8900A6361A /* Map.storyboard */,
 				B9CB11E524E5D3DA00A6361A /* MapCoordinator.swift */,
+				B9CB11E324E5D27700A6361A /* DetailWorldCorona.swift */,
 			);
 			path = "Map ";
 			sourceTree = "<group>";
@@ -174,7 +175,6 @@
 				B92B5CB124827DB6001FDD1A /* SceneDelegate.swift */,
 				B9CB11D324E4827800A6361A /* AppCoordinator.swift */,
 				B911A6DC24D0C88F00D8DB16 /* Select */,
-				B92B5CB524827DB6001FDD1A /* Main.storyboard */,
 				B92B5CB824827DBA001FDD1A /* Assets.xcassets */,
 				B92B5CBA24827DBA001FDD1A /* LaunchScreen.storyboard */,
 				B92B5CBD24827DBA001FDD1A /* Info.plist */,
@@ -206,11 +206,10 @@
 				B97D2BB524A57F5B00FC6DC4 /* CoronaWorldTableViewCell.swift */,
 				B97D2BB324A5773E00FC6DC4 /* CoronaWorldController.swift */,
 				B9B08B5024A56FE600DAA4A2 /* CoronaWorldTableViewController.swift */,
-				B9B08B4E24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift */,
 				B9B08B4924A56AE200DAA4A2 /* CoronaWorldModel.swift */,
 				B9CB11C824E47E7300A6361A /* CoronaWord.storyboard */,
 				B9CB11DB24E5CB6800A6361A /* CoronaWorldCoordinator.swift */,
-				B9CB11E324E5D27700A6361A /* DetailWorldCorona.swift */,
+				B9B7F41524EAFA3300A747AA /* CoronaWorldDetail */,
 			);
 			path = CoronsWorld;
 			sourceTree = "<group>";
@@ -222,12 +221,29 @@
 				B9B08B4C24A56F0200DAA4A2 /* CoronaController.swift */,
 				B92B5CC724845009001FDD1A /* CoronaTableViewController.swift */,
 				B92B5CCF24848F54001FDD1A /* CoronaTableViewCell.swift */,
-				B946625E24994A66007F499F /* DetailCoronaViewController.swift */,
 				B9CB11C624E47E5F00A6361A /* CoronaBrasil.storyboard */,
 				B9CB11D724E5867C00A6361A /* CoronoBrCoordinator.swift */,
-				B9CB11DD24E5CFDD00A6361A /* DetailBrCoordinator.swift */,
+				B9B7F41224EAF9BB00A747AA /* CoronaDetailBrasil */,
 			);
 			path = CoronaBrasil;
+			sourceTree = "<group>";
+		};
+		B9B7F41224EAF9BB00A747AA /* CoronaDetailBrasil */ = {
+			isa = PBXGroup;
+			children = (
+				B946625E24994A66007F499F /* DetailCoronaViewController.swift */,
+				B9CB11DD24E5CFDD00A6361A /* DetailBrCoordinator.swift */,
+				B9B7F41324EAF9F000A747AA /* CoronaDetail.storyboard */,
+			);
+			path = CoronaDetailBrasil;
+			sourceTree = "<group>";
+		};
+		B9B7F41524EAFA3300A747AA /* CoronaWorldDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B9B08B4E24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift */,
+			);
+			path = CoronaWorldDetail;
 			sourceTree = "<group>";
 		};
 		B9CB11D224E4809E00A6361A /* Protocolo */ = {
@@ -316,8 +332,8 @@
 				B9CB11CD24E47EA400A6361A /* Cadastro.storyboard in Resources */,
 				B92B5CB924827DBA001FDD1A /* Assets.xcassets in Resources */,
 				B9CB11C524E47E4A00A6361A /* Select.storyboard in Resources */,
-				B92B5CB724827DB6001FDD1A /* Main.storyboard in Resources */,
 				B9CB11C724E47E5F00A6361A /* CoronaBrasil.storyboard in Resources */,
+				B9B7F41424EAF9F000A747AA /* CoronaDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,14 +423,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B92B5CB524827DB6001FDD1A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B92B5CB624827DB6001FDD1A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B92B5CBA24827DBA001FDD1A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

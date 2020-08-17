@@ -29,6 +29,11 @@
         configLoginBtn()
     }
     
+    deinit {
+           coordinator?.childDidFinish(coordinator)
+           print("CadastroViewController de init")
+       }
+    
     // MARK: IBActions
     @IBAction func singUpBtn(_ sender: UIButton) {
         

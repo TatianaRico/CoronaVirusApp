@@ -25,6 +25,11 @@ class CoronaTableViewController: UITableViewController {
             }
         }
     }
+   
+    deinit {
+         coordinator?.childDidFinish(coordinator)
+          print("CoronaTableViewController deinit")
+    }
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

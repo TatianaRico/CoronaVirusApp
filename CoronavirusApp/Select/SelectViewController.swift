@@ -19,6 +19,8 @@ class SelectViewController: UIViewController {
     }
     
     deinit {
+        coordinator?.childDidFinish(coordinator!)
+        print("SelectViewController deinit")
     }
     
     @IBAction func goWorld(_ sender: UIButton) {

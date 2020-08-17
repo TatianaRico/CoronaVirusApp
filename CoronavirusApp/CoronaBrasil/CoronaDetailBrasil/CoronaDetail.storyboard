@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Corona View Controller-->
+        <scene sceneID="Zry-GV-d6y">
+            <objects>
+                <viewController storyboardIdentifier="DetailCoronaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KFd-lY-a62" customClass="DetailCoronaViewController" customModule="CoronavirusApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vxg-K1-ITq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corona" translatesAutoresizingMaskIntoConstraints="NO" id="JwP-yH-0xB">
+                                <rect key="frame" x="20" y="64" width="374" height="269"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpE-Hb-InE">
+                                <rect key="frame" x="20" y="373" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numero de caso " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAn-1d-TwL">
+                                <rect key="frame" x="20" y="433.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numero de Mortes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBr-GR-XKd">
+                                <rect key="frame" x="20" y="494" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numero de suspeitos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFd-fH-rFL">
+                                <rect key="frame" x="20" y="554.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rpE-Hb-InE" firstAttribute="top" secondItem="JwP-yH-0xB" secondAttribute="bottom" constant="40" id="5z5-9X-vTx"/>
+                            <constraint firstItem="uBr-GR-XKd" firstAttribute="leading" secondItem="EAn-1d-TwL" secondAttribute="leading" id="Bjb-Tg-Val"/>
+                            <constraint firstItem="rpE-Hb-InE" firstAttribute="trailing" secondItem="JwP-yH-0xB" secondAttribute="trailing" id="Cy5-yU-eGv"/>
+                            <constraint firstItem="rpE-Hb-InE" firstAttribute="leading" secondItem="JwP-yH-0xB" secondAttribute="leading" id="JHR-tM-9G2"/>
+                            <constraint firstItem="JwP-yH-0xB" firstAttribute="height" secondItem="Vxg-K1-ITq" secondAttribute="height" multiplier="0.3" id="JM3-9K-10D"/>
+                            <constraint firstItem="JwP-yH-0xB" firstAttribute="top" secondItem="tez-LM-7zP" secondAttribute="top" constant="20" id="LQd-y8-Fgo"/>
+                            <constraint firstItem="EAn-1d-TwL" firstAttribute="leading" secondItem="rpE-Hb-InE" secondAttribute="leading" id="Lzk-J5-Skd"/>
+                            <constraint firstItem="JwP-yH-0xB" firstAttribute="leading" secondItem="tez-LM-7zP" secondAttribute="leading" constant="20" id="Ugj-df-TJw"/>
+                            <constraint firstItem="VFd-fH-rFL" firstAttribute="trailing" secondItem="uBr-GR-XKd" secondAttribute="trailing" id="bWN-dq-f1E"/>
+                            <constraint firstItem="uBr-GR-XKd" firstAttribute="top" secondItem="EAn-1d-TwL" secondAttribute="bottom" constant="40" id="cCY-CP-kX7"/>
+                            <constraint firstItem="VFd-fH-rFL" firstAttribute="leading" secondItem="uBr-GR-XKd" secondAttribute="leading" id="cyS-iq-uyE"/>
+                            <constraint firstItem="EAn-1d-TwL" firstAttribute="top" secondItem="rpE-Hb-InE" secondAttribute="bottom" constant="40" id="dY9-uT-p1W"/>
+                            <constraint firstItem="EAn-1d-TwL" firstAttribute="trailing" secondItem="rpE-Hb-InE" secondAttribute="trailing" id="fEL-ay-2FP"/>
+                            <constraint firstItem="tez-LM-7zP" firstAttribute="trailing" secondItem="JwP-yH-0xB" secondAttribute="trailing" constant="20" id="rRG-yP-iI8"/>
+                            <constraint firstItem="uBr-GR-XKd" firstAttribute="trailing" secondItem="EAn-1d-TwL" secondAttribute="trailing" id="yuj-kj-bdN"/>
+                            <constraint firstItem="VFd-fH-rFL" firstAttribute="top" secondItem="uBr-GR-XKd" secondAttribute="bottom" constant="40" id="zlo-f8-d5s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tez-LM-7zP"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="JwP-yH-0xB" id="cDI-lv-TEg"/>
+                        <outlet property="numberCaseLb" destination="EAn-1d-TwL" id="pf8-jD-tet"/>
+                        <outlet property="numberDeathLb" destination="uBr-GR-XKd" id="V8w-Za-QwW"/>
+                        <outlet property="numberSuspectLb" destination="VFd-fH-rFL" id="fhH-7i-sKr"/>
+                        <outlet property="stateLb" destination="rpE-Hb-InE" id="6Zu-UI-AdR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Joj-LP-fgj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="corona" width="900" height="506"/>
+    </resources>
+</document>
