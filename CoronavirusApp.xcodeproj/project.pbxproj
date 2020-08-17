@@ -31,9 +31,11 @@
 		B9B08B4F24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B08B4E24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift */; };
 		B9B08B5124A56FE600DAA4A2 /* CoronaWorldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B08B5024A56FE600DAA4A2 /* CoronaWorldTableViewController.swift */; };
 		B9B7F41424EAF9F000A747AA /* CoronaDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B7F41324EAF9F000A747AA /* CoronaDetail.storyboard */; };
+		B9B7F41B24EB026F00A747AA /* DetailWorldCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B7F41A24EB026F00A747AA /* DetailWorldCoordinator.swift */; };
+		B9B7F41D24EB02CE00A747AA /* CoronaWorld.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B7F41C24EB02CE00A747AA /* CoronaWorld.storyboard */; };
+		B9B7F41F24EB02FA00A747AA /* DetailWorld.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B7F41E24EB02FA00A747AA /* DetailWorld.storyboard */; };
 		B9CB11C524E47E4A00A6361A /* Select.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB11C424E47E4A00A6361A /* Select.storyboard */; };
 		B9CB11C724E47E5F00A6361A /* CoronaBrasil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB11C624E47E5F00A6361A /* CoronaBrasil.storyboard */; };
-		B9CB11C924E47E7300A6361A /* CoronaWord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB11C824E47E7300A6361A /* CoronaWord.storyboard */; };
 		B9CB11CB24E47E8900A6361A /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB11CA24E47E8900A6361A /* Map.storyboard */; };
 		B9CB11CD24E47EA400A6361A /* Cadastro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB11CC24E47EA400A6361A /* Cadastro.storyboard */; };
 		B9CB11D124E4809900A6361A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB11D024E4809900A6361A /* Coordinator.swift */; };
@@ -43,7 +45,6 @@
 		B9CB11DA24E5878600A6361A /* CadastroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB11D924E5878600A6361A /* CadastroCoordinator.swift */; };
 		B9CB11DC24E5CB6800A6361A /* CoronaWorldCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB11DB24E5CB6800A6361A /* CoronaWorldCoordinator.swift */; };
 		B9CB11DE24E5CFDD00A6361A /* DetailBrCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB11DD24E5CFDD00A6361A /* DetailBrCoordinator.swift */; };
-		B9CB11E424E5D27700A6361A /* DetailWorldCorona.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB11E324E5D27700A6361A /* DetailWorldCorona.swift */; };
 		B9CB11E624E5D3DA00A6361A /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB11E524E5D3DA00A6361A /* MapCoordinator.swift */; };
 		B9EB1F6C24DDA0A8007F67A6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */; };
 		B9EB1F7224DDB498007F67A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9EB1F7124DDB497007F67A6 /* GoogleService-Info.plist */; };
@@ -79,9 +80,11 @@
 		B9B08B4E24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaWorldDetailViewController.swift; sourceTree = "<group>"; };
 		B9B08B5024A56FE600DAA4A2 /* CoronaWorldTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaWorldTableViewController.swift; sourceTree = "<group>"; };
 		B9B7F41324EAF9F000A747AA /* CoronaDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoronaDetail.storyboard; sourceTree = "<group>"; };
+		B9B7F41A24EB026F00A747AA /* DetailWorldCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWorldCoordinator.swift; sourceTree = "<group>"; };
+		B9B7F41C24EB02CE00A747AA /* CoronaWorld.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoronaWorld.storyboard; sourceTree = "<group>"; };
+		B9B7F41E24EB02FA00A747AA /* DetailWorld.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailWorld.storyboard; sourceTree = "<group>"; };
 		B9CB11C424E47E4A00A6361A /* Select.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Select.storyboard; sourceTree = "<group>"; };
 		B9CB11C624E47E5F00A6361A /* CoronaBrasil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoronaBrasil.storyboard; sourceTree = "<group>"; };
-		B9CB11C824E47E7300A6361A /* CoronaWord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoronaWord.storyboard; sourceTree = "<group>"; };
 		B9CB11CA24E47E8900A6361A /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		B9CB11CC24E47EA400A6361A /* Cadastro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cadastro.storyboard; sourceTree = "<group>"; };
 		B9CB11D024E4809900A6361A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -91,7 +94,6 @@
 		B9CB11D924E5878600A6361A /* CadastroCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroCoordinator.swift; sourceTree = "<group>"; };
 		B9CB11DB24E5CB6800A6361A /* CoronaWorldCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaWorldCoordinator.swift; sourceTree = "<group>"; };
 		B9CB11DD24E5CFDD00A6361A /* DetailBrCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBrCoordinator.swift; sourceTree = "<group>"; };
-		B9CB11E324E5D27700A6361A /* DetailWorldCorona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWorldCorona.swift; sourceTree = "<group>"; };
 		B9CB11E524E5D3DA00A6361A /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
 		B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = "Map /Alert.swift"; sourceTree = "<group>"; };
 		B9EB1F7124DDB497007F67A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -145,7 +147,6 @@
 				B9128D4F24B4E48A0040E29F /* MapController.swift */,
 				B9CB11CA24E47E8900A6361A /* Map.storyboard */,
 				B9CB11E524E5D3DA00A6361A /* MapCoordinator.swift */,
-				B9CB11E324E5D27700A6361A /* DetailWorldCorona.swift */,
 			);
 			path = "Map ";
 			sourceTree = "<group>";
@@ -207,7 +208,7 @@
 				B97D2BB324A5773E00FC6DC4 /* CoronaWorldController.swift */,
 				B9B08B5024A56FE600DAA4A2 /* CoronaWorldTableViewController.swift */,
 				B9B08B4924A56AE200DAA4A2 /* CoronaWorldModel.swift */,
-				B9CB11C824E47E7300A6361A /* CoronaWord.storyboard */,
+				B9B7F41C24EB02CE00A747AA /* CoronaWorld.storyboard */,
 				B9CB11DB24E5CB6800A6361A /* CoronaWorldCoordinator.swift */,
 				B9B7F41524EAFA3300A747AA /* CoronaWorldDetail */,
 			);
@@ -242,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				B9B08B4E24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift */,
+				B9B7F41A24EB026F00A747AA /* DetailWorldCoordinator.swift */,
+				B9B7F41E24EB02FA00A747AA /* DetailWorld.storyboard */,
 			);
 			path = CoronaWorldDetail;
 			sourceTree = "<group>";
@@ -325,10 +328,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9CB11C924E47E7300A6361A /* CoronaWord.storyboard in Resources */,
 				B9EB1F7224DDB498007F67A6 /* GoogleService-Info.plist in Resources */,
 				B92B5CBC24827DBA001FDD1A /* LaunchScreen.storyboard in Resources */,
+				B9B7F41F24EB02FA00A747AA /* DetailWorld.storyboard in Resources */,
 				B9CB11CB24E47E8900A6361A /* Map.storyboard in Resources */,
+				B9B7F41D24EB02CE00A747AA /* CoronaWorld.storyboard in Resources */,
 				B9CB11CD24E47EA400A6361A /* Cadastro.storyboard in Resources */,
 				B92B5CB924827DBA001FDD1A /* Assets.xcassets in Resources */,
 				B9CB11C524E47E4A00A6361A /* Select.storyboard in Resources */,
@@ -389,7 +393,6 @@
 				B9B08B43249D0B9E00DAA4A2 /* SelectViewController.swift in Sources */,
 				B9CB11DC24E5CB6800A6361A /* CoronaWorldCoordinator.swift in Sources */,
 				B92B5CC424827DD9001FDD1A /* ApiRest.swift in Sources */,
-				B9CB11E424E5D27700A6361A /* DetailWorldCorona.swift in Sources */,
 				B97D2BB624A57F5B00FC6DC4 /* CoronaWorldTableViewCell.swift in Sources */,
 				B946625F24994A66007F499F /* DetailCoronaViewController.swift in Sources */,
 				B9CB11D824E5867C00A6361A /* CoronoBrCoordinator.swift in Sources */,
@@ -409,6 +412,7 @@
 				B9CB11D624E485F400A6361A /* SelectCoordinator.swift in Sources */,
 				B9B08B4D24A56F0200DAA4A2 /* CoronaController.swift in Sources */,
 				B92B5CB024827DB6001FDD1A /* AppDelegate.swift in Sources */,
+				B9B7F41B24EB026F00A747AA /* DetailWorldCoordinator.swift in Sources */,
 				B9CB11DA24E5878600A6361A /* CadastroCoordinator.swift in Sources */,
 				B9CB11D124E4809900A6361A /* Coordinator.swift in Sources */,
 				B9B08B4F24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift in Sources */,
