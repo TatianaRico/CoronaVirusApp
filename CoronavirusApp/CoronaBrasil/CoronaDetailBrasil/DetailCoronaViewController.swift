@@ -19,12 +19,18 @@ class DetailCoronaViewController: UIViewController {
     
     // MARK: - Properties
     var model: Corona?
+    var coordinator: DetailBrCoordinator?
     
     // MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
+    
+    deinit {
+           coordinator?.childDidFinish(coordinator)
+            print("CoronaTableViewController deinit")
+      }
     
     // MARK: Methods
     func setup() {

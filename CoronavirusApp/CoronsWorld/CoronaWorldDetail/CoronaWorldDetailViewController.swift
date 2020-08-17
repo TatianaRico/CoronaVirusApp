@@ -21,11 +21,17 @@ class CoronaWorldDetailViewController: UIViewController {
     
     // MARK: - Properties
     var model: Country?
+    var coordinator: DetailWorldCoordinator?
     
     // MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+    }
+    
+    deinit {
+        coordinator?.childDidFinish(coordinator)
+        print("CoronaWorldDetailViewController de init")
     }
     
     // MARK: Methods
@@ -40,14 +46,11 @@ class CoronaWorldDetailViewController: UIViewController {
     }
     
     func goToMap()-> String {
-        
         return model?.slug ?? ""
     }
     
     // MARK: IBActions
     @IBAction func goToMapBtn(_ sender: UIButton) {
-        var vc = storyboard?.instantiateViewController(identifier: "ViewController" ) as? ViewController
-        vc?.viewController = goToMap()
-        navigationController?.pushViewController(vc ?? ViewController() , animated: true)
+        coordinator?.goMap(country: goToMap())
     }
 }

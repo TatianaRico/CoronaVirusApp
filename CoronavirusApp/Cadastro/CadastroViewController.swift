@@ -20,6 +20,8 @@
     //MARK: - Properties
     lazy var auth = Auth.auth()
     var controller = ControllerCadastro()
+    weak var coordinator: CadastroCoordinator?
+    
     // MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,21 +29,23 @@
         configLoginBtn()
     }
     
+    deinit {
+           coordinator?.childDidFinish(coordinator)
+           print("CadastroViewController de init")
+       }
+    
     // MARK: IBActions
     @IBAction func singUpBtn(_ sender: UIButton) {
         
         controller.login(email: emailTextField.text ?? "", passaword: passwordTextField.text ?? "", view: self) { (result) in
-            guard let vc  = self.storyboard?.instantiateViewController(identifier: "SelectViewController") as? SelectViewController else{return}
-            self.navigationController?.pushViewController(vc, animated: true)
+            self.coordinator?.goToNewClass()
         }
     }
     
     @IBAction func cadastroBtn(_ sender: UIButton) {
         
         controller.cadastro(email: emailTextField.text ?? "", passaword: passwordTextField.text ?? "", view: self) { (sucess) in
-            guard let vc  =
-                self.storyboard?.instantiateViewController(identifier: "SelectViewController") as? SelectViewController else{return}
-            self.navigationController?.pushViewController(vc, animated: true)
+            self.coordinator?.goToNewClass()
         }
     }
     

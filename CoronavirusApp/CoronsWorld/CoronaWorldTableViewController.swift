@@ -12,6 +12,7 @@ class CoronaWorldTableViewController: UITableViewController {
     
     // MARK: - Properties
     private var controller = CoronaWorldController()
+     weak var coordinator: CoronaWorldCoordinator?
     
     // MARK: - Super Methods
     override func viewDidLoad() {
@@ -20,6 +21,11 @@ class CoronaWorldTableViewController: UITableViewController {
             guard let self = self else {return}
             self.tableView.reloadData()
         }
+    }
+    
+    deinit {
+        coordinator?.childDidFinish(coordinator)
+        print("CoronaWorldTableViewController de init")
     }
     
     // MARK: - Table view data source
@@ -37,10 +43,9 @@ class CoronaWorldTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(identifier: "CoronaWorldDetailViewController")  as? CoronaWorldDetailViewController {
-            
-            vc.model = controller.cellForRow(indexPath: indexPath)
-            navigationController?.pushViewController(vc, animated: true)
-        }
+        
+        let elemContry = controller.cellForRow(indexPath: indexPath)
+        coordinator?.getElement(contry: elemContry)
     }
 }
+
