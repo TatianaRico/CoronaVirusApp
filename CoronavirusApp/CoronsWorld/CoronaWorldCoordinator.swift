@@ -19,7 +19,7 @@ class CoronaWorldCoordinator: Coordinator {
     }
     
     func star() {
-        let storyboard = UIStoryboard(name: "CoronaWord", bundle: nil)
+        let storyboard = UIStoryboard(name: "CoronaWorld", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "CoronaWorldTableViewController") as? CoronaWorldTableViewController
         vc?.coordinator = self
         navigationController.pushViewController(vc ?? CoronaWorldTableViewController(), animated: true)

@@ -21,7 +21,7 @@ class DetailWorldCoordinator: Coordinator {
     }
     
     func star() {
-        let storyboard = UIStoryboard(name: "CoronaWord", bundle: nil)
+        let storyboard = UIStoryboard(name: "DetailWorld", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "CoronaWorldDetailViewController") as? CoronaWorldDetailViewController
         vc?.coordinator = self
         vc?.model = self.country
