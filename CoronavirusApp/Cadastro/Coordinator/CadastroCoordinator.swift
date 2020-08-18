@@ -10,30 +10,32 @@ import UIKit
 
 class CadastroCoordinator: Coordinator {
     
+    // MARK: - IBOutlets
     var navigationController: UINavigationController
     var childCoordinator: [Coordinator] = []
     var parentCoordinator: Coordinator?
     
+    // MARK: - Super Methods
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
         navigationController.navigationBar.isHidden = true
     }
     
+    // MARK: Methods
     func star() {
-        let storyboard = UIStoryboard(name: "Cadastro", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "CadastroViewController") as? CadastroViewController
-        vc?.coordinator = self
-        navigationController.pushViewController(vc ?? CadastroViewController(), animated: false)
+        let vc = CadastroViewController.instantiateFromStoryBoard(.login)
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: false)
     }
     
     func goToNewClass() {
         let childCoordinator = SelectCoordinator(navigationController: navigationController)
-               childCoordinator.parentCoordinator = self
-               add(childCoordinator: childCoordinator)
-               childCoordinator.star()
+        childCoordinator.parentCoordinator = self
+        add(childCoordinator: childCoordinator)
+        childCoordinator.star()
     }
     
     func childDidFinish(_ child: Coordinator) {
-          parentCoordinator?.childDidFinish(self)
-      }
+        parentCoordinator?.childDidFinish(self)
+    }
 }

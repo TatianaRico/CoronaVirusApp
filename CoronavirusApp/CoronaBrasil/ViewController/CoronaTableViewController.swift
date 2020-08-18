@@ -18,7 +18,7 @@ class CoronaTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        controller.loadCorona { [weak self](sucess) in
+        controller.getList { [weak self](sucess) in
             guard let self = self else {return}
             if sucess {
                 self.tableView.reloadData()

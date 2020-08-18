@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5A0CA2B75767483D026B4B9F /* Pods_CoronavirusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522556D100FC4A914A0BA190 /* Pods_CoronavirusApp.framework */; };
+		B9075A4224EC95E0000F5C36 /* StoryBoard+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9075A4124EC95E0000F5C36 /* StoryBoard+names.swift */; };
+		B9075A4424EC960C000F5C36 /* UIViewController+instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9075A4324EC960C000F5C36 /* UIViewController+instantiate.swift */; };
 		B9128D4C24B4BC2B0040E29F /* ApiMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9128D4B24B4BC2B0040E29F /* ApiMap.swift */; };
-		B9128D4E24B4BF0D0040E29F /* RequestAPIMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9128D4D24B4BF0D0040E29F /* RequestAPIMap.swift */; };
+		B9128D4E24B4BF0D0040E29F /* RequestMapAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9128D4D24B4BF0D0040E29F /* RequestMapAPI.swift */; };
 		B9128D5024B4E48A0040E29F /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9128D4F24B4E48A0040E29F /* MapViewModel.swift */; };
 		B92B5CB024827DB6001FDD1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CAF24827DB6001FDD1A /* AppDelegate.swift */; };
-		B92B5CB224827DB6001FDD1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CB124827DB6001FDD1A /* SceneDelegate.swift */; };
 		B92B5CB424827DB6001FDD1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CB324827DB6001FDD1A /* MapViewController.swift */; };
 		B92B5CB924827DBA001FDD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B92B5CB824827DBA001FDD1A /* Assets.xcassets */; };
 		B92B5CBC24827DBA001FDD1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92B5CBA24827DBA001FDD1A /* LaunchScreen.storyboard */; };
-		B92B5CC424827DD9001FDD1A /* ApiRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CC324827DD9001FDD1A /* ApiRest.swift */; };
+		B92B5CC424827DD9001FDD1A /* RequestBrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CC324827DD9001FDD1A /* RequestBrAPI.swift */; };
 		B92B5CC624843DD2001FDD1A /* CoronaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CC524843DD2001FDD1A /* CoronaModel.swift */; };
 		B92B5CC82484500A001FDD1A /* CoronaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CC724845009001FDD1A /* CoronaTableViewController.swift */; };
 		B92B5CD024848F54001FDD1A /* CoronaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CCF24848F54001FDD1A /* CoronaTableViewCell.swift */; };
@@ -46,6 +47,7 @@
 		B9CB11DC24E5CB6800A6361A /* CoronaWorldCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB11DB24E5CB6800A6361A /* CoronaWorldCoordinator.swift */; };
 		B9CB11DE24E5CFDD00A6361A /* DetailBrCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB11DD24E5CFDD00A6361A /* DetailBrCoordinator.swift */; };
 		B9CB11E624E5D3DA00A6361A /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB11E524E5D3DA00A6361A /* MapCoordinator.swift */; };
+		B9DB463024EC794000C7D375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DB462F24EC794000C7D375 /* SceneDelegate.swift */; };
 		B9EB1F6C24DDA0A8007F67A6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */; };
 		B9EB1F7224DDB498007F67A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9EB1F7124DDB497007F67A6 /* GoogleService-Info.plist */; };
 		B9EB1F7524DDB719007F67A6 /* ControllerCadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EB1F7424DDB719007F67A6 /* ControllerCadastro.swift */; };
@@ -55,17 +57,18 @@
 		21B39E03C55E03CA9EF110F9 /* Pods-CoronavirusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronavirusApp.debug.xcconfig"; path = "Target Support Files/Pods-CoronavirusApp/Pods-CoronavirusApp.debug.xcconfig"; sourceTree = "<group>"; };
 		522556D100FC4A914A0BA190 /* Pods_CoronavirusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoronavirusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DB30DF14D2A32DD177C0B0 /* Pods-CoronavirusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronavirusApp.release.xcconfig"; path = "Target Support Files/Pods-CoronavirusApp/Pods-CoronavirusApp.release.xcconfig"; sourceTree = "<group>"; };
+		B9075A4124EC95E0000F5C36 /* StoryBoard+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "StoryBoard+names.swift"; path = "CoronavirusApp/Exteni/StoryBoard+names.swift"; sourceTree = SOURCE_ROOT; };
+		B9075A4324EC960C000F5C36 /* UIViewController+instantiate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+instantiate.swift"; path = "../CoronavirusApp/Exteni/UIViewController+instantiate.swift"; sourceTree = "<group>"; };
 		B9128D4B24B4BC2B0040E29F /* ApiMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMap.swift; sourceTree = "<group>"; };
-		B9128D4D24B4BF0D0040E29F /* RequestAPIMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPIMap.swift; sourceTree = "<group>"; };
+		B9128D4D24B4BF0D0040E29F /* RequestMapAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMapAPI.swift; sourceTree = "<group>"; };
 		B9128D4F24B4E48A0040E29F /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		B92B5CAC24827DB6001FDD1A /* CoronavirusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronavirusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92B5CAF24827DB6001FDD1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B92B5CB124827DB6001FDD1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B92B5CB324827DB6001FDD1A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B92B5CB824827DBA001FDD1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B92B5CBB24827DBA001FDD1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B92B5CBD24827DBA001FDD1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B92B5CC324827DD9001FDD1A /* ApiRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRest.swift; sourceTree = "<group>"; };
+		B92B5CC324827DD9001FDD1A /* RequestBrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBrAPI.swift; sourceTree = "<group>"; };
 		B92B5CC524843DD2001FDD1A /* CoronaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaModel.swift; sourceTree = "<group>"; };
 		B92B5CC724845009001FDD1A /* CoronaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaTableViewController.swift; sourceTree = "<group>"; };
 		B92B5CCF24848F54001FDD1A /* CoronaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaTableViewCell.swift; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		B9CB11DB24E5CB6800A6361A /* CoronaWorldCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaWorldCoordinator.swift; sourceTree = "<group>"; };
 		B9CB11DD24E5CFDD00A6361A /* DetailBrCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBrCoordinator.swift; sourceTree = "<group>"; };
 		B9CB11E524E5D3DA00A6361A /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		B9DB462F24EC794000C7D375 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		B9EB1F7124DDB497007F67A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B9EB1F7424DDB719007F67A6 /* ControllerCadastro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCadastro.swift; sourceTree = "<group>"; };
@@ -129,6 +133,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B9075A4524EC9634000F5C36 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B9075A4124EC95E0000F5C36 /* StoryBoard+names.swift */,
+				B9075A4324EC960C000F5C36 /* UIViewController+instantiate.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		B911A6DC24D0C88F00D8DB16 /* Select */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				B92B5CAE24827DB6001FDD1A /* CoronavirusApp */,
+				B9075A4524EC9634000F5C36 /* Extension */,
 				B92B5CAD24827DB6001FDD1A /* Products */,
 				5BC1C97A12B2004285715CE2 /* Pods */,
 				889BDD26786832ED8C60A54C /* Frameworks */,
@@ -171,9 +185,7 @@
 		B92B5CAE24827DB6001FDD1A /* CoronavirusApp */ = {
 			isa = PBXGroup;
 			children = (
-				B92B5CAF24827DB6001FDD1A /* AppDelegate.swift */,
-				B92B5CB124827DB6001FDD1A /* SceneDelegate.swift */,
-				B9CB11D324E4827800A6361A /* AppCoordinator.swift */,
+				B9DB463124EC7A4900C7D375 /* Main */,
 				B911A6DC24D0C88F00D8DB16 /* Select */,
 				B92B5CB824827DBA001FDD1A /* Assets.xcassets */,
 				B92B5CBA24827DBA001FDD1A /* LaunchScreen.storyboard */,
@@ -193,8 +205,8 @@
 		B97D2BB724B375EF00FC6DC4 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				B92B5CC324827DD9001FDD1A /* ApiRest.swift */,
-				B9128D4D24B4BF0D0040E29F /* RequestAPIMap.swift */,
+				B92B5CC324827DD9001FDD1A /* RequestBrAPI.swift */,
+				B9128D4D24B4BF0D0040E29F /* RequestMapAPI.swift */,
 				B9B08B4724A565F000DAA4A2 /* RequestAPiWorld.swift */,
 			);
 			path = API;
@@ -441,6 +453,16 @@
 			path = Protocolo;
 			sourceTree = "<group>";
 		};
+		B9DB463124EC7A4900C7D375 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B9CB11D324E4827800A6361A /* AppCoordinator.swift */,
+				B92B5CAF24827DB6001FDD1A /* AppDelegate.swift */,
+				B9DB462F24EC794000C7D375 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		B9EB1F7324DDB6DA007F67A6 /* Cadastro */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,12 +598,14 @@
 			files = (
 				B9B08B43249D0B9E00DAA4A2 /* SelectViewController.swift in Sources */,
 				B9CB11DC24E5CB6800A6361A /* CoronaWorldCoordinator.swift in Sources */,
-				B92B5CC424827DD9001FDD1A /* ApiRest.swift in Sources */,
+				B92B5CC424827DD9001FDD1A /* RequestBrAPI.swift in Sources */,
 				B97D2BB624A57F5B00FC6DC4 /* CoronaWorldTableViewCell.swift in Sources */,
 				B946625F24994A66007F499F /* DetailCoronaViewController.swift in Sources */,
 				B9CB11D824E5867C00A6361A /* CoronoBrCoordinator.swift in Sources */,
+				B9DB463024EC794000C7D375 /* SceneDelegate.swift in Sources */,
 				B97D2BB424A5773E00FC6DC4 /* CoronaWorldController.swift in Sources */,
 				B92B5CD024848F54001FDD1A /* CoronaTableViewCell.swift in Sources */,
+				B9075A4424EC960C000F5C36 /* UIViewController+instantiate.swift in Sources */,
 				B9EB1F6C24DDA0A8007F67A6 /* Alert.swift in Sources */,
 				B92B5CC624843DD2001FDD1A /* CoronaModel.swift in Sources */,
 				B9128D5024B4E48A0040E29F /* MapViewModel.swift in Sources */,
@@ -598,13 +622,13 @@
 				B92B5CB024827DB6001FDD1A /* AppDelegate.swift in Sources */,
 				B9B7F41B24EB026F00A747AA /* DetailWorldCoordinator.swift in Sources */,
 				B9CB11DA24E5878600A6361A /* CadastroCoordinator.swift in Sources */,
+				B9075A4224EC95E0000F5C36 /* StoryBoard+names.swift in Sources */,
 				B9CB11D124E4809900A6361A /* Coordinator.swift in Sources */,
 				B9B08B4F24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift in Sources */,
-				B9128D4E24B4BF0D0040E29F /* RequestAPIMap.swift in Sources */,
+				B9128D4E24B4BF0D0040E29F /* RequestMapAPI.swift in Sources */,
 				B9B08B5124A56FE600DAA4A2 /* CoronaWorldTableViewController.swift in Sources */,
 				B9CB11DE24E5CFDD00A6361A /* DetailBrCoordinator.swift in Sources */,
 				B981B97B24B65DA90055C11F /* CadastroViewController.swift in Sources */,
-				B92B5CB224827DB6001FDD1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,6 +784,7 @@
 			baseConfigurationReference = A0DB30DF14D2A32DD177C0B0 /* Pods-CoronavirusApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7FM6MN466;
 				INFOPLIST_FILE = CoronavirusApp/Info.plist;
@@ -769,6 +794,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.CoronavirusApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -17,7 +17,7 @@ class CoronaWorldTableViewController: UITableViewController {
     // MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        controller.getApi { [weak self](sucess) in
+        controller.getList { [weak self](sucess) in
             guard let self = self else {return}
             self.tableView.reloadData()
         }

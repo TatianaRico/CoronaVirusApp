@@ -10,19 +10,21 @@ import UIKit
 
 class CoronaWorldCoordinator: Coordinator {
     
+    // MARK: - Properties
     var navigationController: UINavigationController
     var childCoordinator: [Coordinator] = []
     var parentCoordinator: Coordinator?
     
+    // MARK: - Super Methods
     init(navigationController: UINavigationController){
         self.navigationController = navigationController
     }
     
+    // MARK: Methods
     func star() {
-        let storyboard = UIStoryboard(name: "CoronaWorld", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "CoronaWorldTableViewController") as? CoronaWorldTableViewController
-        vc?.coordinator = self
-        navigationController.pushViewController(vc ?? CoronaWorldTableViewController(), animated: true)
+        let vc = CoronaWorldTableViewController.instantiateFromStoryBoard(.world)
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func getElement(contry:  Country){
@@ -31,8 +33,8 @@ class CoronaWorldCoordinator: Coordinator {
         add(childCoordinator: childCoordinator)
         childCoordinator.star()
     }
+    
     func childDidFinish(_ child: Coordinator) {
         parentCoordinator?.childDidFinish(self)
-       }
-       
+    }
 }

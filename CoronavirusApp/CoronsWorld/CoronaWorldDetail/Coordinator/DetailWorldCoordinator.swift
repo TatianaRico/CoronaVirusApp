@@ -21,11 +21,10 @@ class DetailWorldCoordinator: Coordinator {
     }
     
     func star() {
-        let storyboard = UIStoryboard(name: "DetailWorld", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "CoronaWorldDetailViewController") as? CoronaWorldDetailViewController
-        vc?.coordinator = self
-        vc?.model = self.country
-        navigationController.pushViewController(vc ?? CoronaWorldDetailViewController(), animated: true)
+        let vc = CoronaWorldDetailViewController.instantiateFromStoryBoard(.detailWorld)
+        vc.coordinator = self
+        vc.model = self.country
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func goMap(country: String){

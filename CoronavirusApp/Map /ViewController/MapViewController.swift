@@ -25,7 +25,7 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManeger.requestWhenInUseAuthorization()
-        controller.getAPIMap(country: country ?? "", completion: { (sucess) in
+        controller.getMap(country: country ?? "", completion: { (sucess) in
             if sucess {
                 self.configurateMap()
             }
@@ -38,7 +38,7 @@ class MapViewController: UIViewController {
     
     // MARK: Methods
     func configurateMap() {
-        var coordination =  CLLocationCoordinate2D(latitude: controller.latitude(), longitude: controller.longitude())
+        var coordination =  CLLocationCoordinate2D(latitude: controller.latitudeMap(), longitude: controller.longitudeMap())
         let direction = MKCoordinateRegion(center: coordination, latitudinalMeters: 1000, longitudinalMeters: 1000)
         self.mapView.setRegion(direction, animated: true)
         let annotation = MKPointAnnotation()

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RequestApiWorld {
+class RequestWorldAPI {
     
     // MARK: - Properties
    private let baseURL: String = "https://api.covid19api.com/summary"
@@ -23,7 +23,7 @@ class RequestApiWorld {
    private let session = URLSession(configuration: configuration)
     
     // MARK: Methods
-    func request(completion: @escaping ([Country]?, Bool) -> Void) {
+    func requestWorld(completion: @escaping ([Country]?, Bool) -> Void) {
         
         guard let url = URL(string: baseURL) else{return}
         

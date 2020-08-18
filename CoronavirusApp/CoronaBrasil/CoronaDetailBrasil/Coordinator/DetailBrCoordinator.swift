@@ -22,11 +22,10 @@ class DetailBrCoordinator: Coordinator {
     }
     
     func star() {
-        let storyboard = UIStoryboard(name: "CoronaDetail", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "DetailCoronaViewController") as? DetailCoronaViewController
-        vc?.coordinator = self
-        vc?.model = self.corona
-        navigationController.pushViewController(vc ?? DetailCoronaViewController(), animated: true)
+        let vc = DetailCoronaViewController.instantiateFromStoryBoard(.detailBr)
+        vc.coordinator = self
+        vc.model = self.corona
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func childDidFinish(_ child: Coordinator) {
