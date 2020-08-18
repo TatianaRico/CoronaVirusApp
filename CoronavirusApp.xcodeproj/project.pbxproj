@@ -10,7 +10,7 @@
 		5A0CA2B75767483D026B4B9F /* Pods_CoronavirusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522556D100FC4A914A0BA190 /* Pods_CoronavirusApp.framework */; };
 		B9128D4C24B4BC2B0040E29F /* ApiMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9128D4B24B4BC2B0040E29F /* ApiMap.swift */; };
 		B9128D4E24B4BF0D0040E29F /* RequestAPIMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9128D4D24B4BF0D0040E29F /* RequestAPIMap.swift */; };
-		B9128D5024B4E48A0040E29F /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9128D4F24B4E48A0040E29F /* MapController.swift */; };
+		B9128D5024B4E48A0040E29F /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9128D4F24B4E48A0040E29F /* MapViewModel.swift */; };
 		B92B5CB024827DB6001FDD1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CAF24827DB6001FDD1A /* AppDelegate.swift */; };
 		B92B5CB224827DB6001FDD1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CB124827DB6001FDD1A /* SceneDelegate.swift */; };
 		B92B5CB424827DB6001FDD1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B5CB324827DB6001FDD1A /* MapViewController.swift */; };
@@ -57,7 +57,7 @@
 		A0DB30DF14D2A32DD177C0B0 /* Pods-CoronavirusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronavirusApp.release.xcconfig"; path = "Target Support Files/Pods-CoronavirusApp/Pods-CoronavirusApp.release.xcconfig"; sourceTree = "<group>"; };
 		B9128D4B24B4BC2B0040E29F /* ApiMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMap.swift; sourceTree = "<group>"; };
 		B9128D4D24B4BF0D0040E29F /* RequestAPIMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPIMap.swift; sourceTree = "<group>"; };
-		B9128D4F24B4E48A0040E29F /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		B9128D4F24B4E48A0040E29F /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		B92B5CAC24827DB6001FDD1A /* CoronavirusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronavirusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92B5CAF24827DB6001FDD1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B92B5CB124827DB6001FDD1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		B9CB11DB24E5CB6800A6361A /* CoronaWorldCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaWorldCoordinator.swift; sourceTree = "<group>"; };
 		B9CB11DD24E5CFDD00A6361A /* DetailBrCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBrCoordinator.swift; sourceTree = "<group>"; };
 		B9CB11E524E5D3DA00A6361A /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
-		B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = "Map /Alert.swift"; sourceTree = "<group>"; };
+		B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		B9EB1F7124DDB497007F67A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B9EB1F7424DDB719007F67A6 /* ControllerCadastro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCadastro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,11 +142,10 @@
 		B9128D5124B516CA0040E29F /* Map  */ = {
 			isa = PBXGroup;
 			children = (
-				B92B5CB324827DB6001FDD1A /* MapViewController.swift */,
-				B9128D4B24B4BC2B0040E29F /* ApiMap.swift */,
-				B9128D4F24B4E48A0040E29F /* MapController.swift */,
-				B9CB11CA24E47E8900A6361A /* Map.storyboard */,
-				B9CB11E524E5D3DA00A6361A /* MapCoordinator.swift */,
+				B9B7F44624EC672700A747AA /* ViewController */,
+				B9B7F44524EC65F000A747AA /* ViewModel */,
+				B9B7F44724EC673C00A747AA /* View */,
+				B9B7F44824EC674700A747AA /* Coordinator */,
 			);
 			path = "Map ";
 			sourceTree = "<group>";
@@ -185,7 +184,7 @@
 				B97D2BB824B3761A00FC6DC4 /* CoronsWorld */,
 				B9128D5124B516CA0040E29F /* Map  */,
 				B9EB1F7324DDB6DA007F67A6 /* Cadastro */,
-				B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */,
+				B9B7F44024EC633900A747AA /* Shared */,
 				B9CB11D224E4809E00A6361A /* Protocolo */,
 			);
 			path = CoronavirusApp;
@@ -204,12 +203,10 @@
 		B97D2BB824B3761A00FC6DC4 /* CoronsWorld */ = {
 			isa = PBXGroup;
 			children = (
-				B97D2BB524A57F5B00FC6DC4 /* CoronaWorldTableViewCell.swift */,
-				B97D2BB324A5773E00FC6DC4 /* CoronaWorldController.swift */,
-				B9B08B5024A56FE600DAA4A2 /* CoronaWorldTableViewController.swift */,
-				B9B08B4924A56AE200DAA4A2 /* CoronaWorldModel.swift */,
-				B9B7F41C24EB02CE00A747AA /* CoronaWorld.storyboard */,
-				B9CB11DB24E5CB6800A6361A /* CoronaWorldCoordinator.swift */,
+				B9B7F45624EC698F00A747AA /* ViewController */,
+				B9B7F45524EC697700A747AA /* ViewModel */,
+				B9B7F45424EC696E00A747AA /* View */,
+				B9B7F45324EC696200A747AA /* Coordinator */,
 				B9B7F41524EAFA3300A747AA /* CoronaWorldDetail */,
 			);
 			path = CoronsWorld;
@@ -218,12 +215,10 @@
 		B9B08B4B24A56E1800DAA4A2 /* CoronaBrasil */ = {
 			isa = PBXGroup;
 			children = (
-				B92B5CC524843DD2001FDD1A /* CoronaModel.swift */,
-				B9B08B4C24A56F0200DAA4A2 /* CoronaController.swift */,
-				B92B5CC724845009001FDD1A /* CoronaTableViewController.swift */,
-				B92B5CCF24848F54001FDD1A /* CoronaTableViewCell.swift */,
-				B9CB11C624E47E5F00A6361A /* CoronaBrasil.storyboard */,
-				B9CB11D724E5867C00A6361A /* CoronoBrCoordinator.swift */,
+				B9B7F44C24EC681C00A747AA /* ViewModel */,
+				B9B7F44D24EC683900A747AA /* ViewController */,
+				B9B7F44E24EC684700A747AA /* View */,
+				B9B7F44F24EC685000A747AA /* Coordinator */,
 				B9B7F41224EAF9BB00A747AA /* CoronaDetailBrasil */,
 			);
 			path = CoronaBrasil;
@@ -232,9 +227,9 @@
 		B9B7F41224EAF9BB00A747AA /* CoronaDetailBrasil */ = {
 			isa = PBXGroup;
 			children = (
-				B946625E24994A66007F499F /* DetailCoronaViewController.swift */,
-				B9CB11DD24E5CFDD00A6361A /* DetailBrCoordinator.swift */,
-				B9B7F41324EAF9F000A747AA /* CoronaDetail.storyboard */,
+				B9B7F44924EC679D00A747AA /* Controller */,
+				B9B7F44A24EC67F700A747AA /* Coordinator */,
+				B9B7F44B24EC680000A747AA /* View */,
 			);
 			path = CoronaDetailBrasil;
 			sourceTree = "<group>";
@@ -242,11 +237,200 @@
 		B9B7F41524EAFA3300A747AA /* CoronaWorldDetail */ = {
 			isa = PBXGroup;
 			children = (
-				B9B08B4E24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift */,
-				B9B7F41A24EB026F00A747AA /* DetailWorldCoordinator.swift */,
-				B9B7F41E24EB02FA00A747AA /* DetailWorld.storyboard */,
+				B9B7F45024EC691D00A747AA /* Controller */,
+				B9B7F45224EC693200A747AA /* Coordinator */,
+				B9B7F45124EC692C00A747AA /* View */,
 			);
 			path = CoronaWorldDetail;
+			sourceTree = "<group>";
+		};
+		B9B7F44024EC633900A747AA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B9EB1F6B24DDA0A8007F67A6 /* Alert.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B9B7F44124EC645500A747AA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B981B97A24B65DA90055C11F /* CadastroViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B9B7F44224EC64AF00A747AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9CB11CC24E47EA400A6361A /* Cadastro.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9B7F44324EC656E00A747AA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B9CB11D924E5878600A6361A /* CadastroCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B9B7F44424EC65BC00A747AA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B9EB1F7424DDB719007F67A6 /* ControllerCadastro.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B9B7F44524EC65F000A747AA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B9128D4B24B4BC2B0040E29F /* ApiMap.swift */,
+				B9128D4F24B4E48A0040E29F /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B9B7F44624EC672700A747AA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B92B5CB324827DB6001FDD1A /* MapViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B9B7F44724EC673C00A747AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9CB11CA24E47E8900A6361A /* Map.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9B7F44824EC674700A747AA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B9CB11E524E5D3DA00A6361A /* MapCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B9B7F44924EC679D00A747AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B946625E24994A66007F499F /* DetailCoronaViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B9B7F44A24EC67F700A747AA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B9CB11DD24E5CFDD00A6361A /* DetailBrCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B9B7F44B24EC680000A747AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9B7F41324EAF9F000A747AA /* CoronaDetail.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9B7F44C24EC681C00A747AA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B92B5CC524843DD2001FDD1A /* CoronaModel.swift */,
+				B9B08B4C24A56F0200DAA4A2 /* CoronaController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B9B7F44D24EC683900A747AA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B92B5CC724845009001FDD1A /* CoronaTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B9B7F44E24EC684700A747AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B92B5CCF24848F54001FDD1A /* CoronaTableViewCell.swift */,
+				B9CB11C624E47E5F00A6361A /* CoronaBrasil.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9B7F44F24EC685000A747AA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B9CB11D724E5867C00A6361A /* CoronoBrCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B9B7F45024EC691D00A747AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9B08B4E24A56FC000DAA4A2 /* CoronaWorldDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B9B7F45124EC692C00A747AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9B7F41E24EB02FA00A747AA /* DetailWorld.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9B7F45224EC693200A747AA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B9B7F41A24EB026F00A747AA /* DetailWorldCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B9B7F45324EC696200A747AA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B9CB11DB24E5CB6800A6361A /* CoronaWorldCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B9B7F45424EC696E00A747AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B97D2BB524A57F5B00FC6DC4 /* CoronaWorldTableViewCell.swift */,
+				B9B7F41C24EB02CE00A747AA /* CoronaWorld.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9B7F45524EC697700A747AA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B9B08B4924A56AE200DAA4A2 /* CoronaWorldModel.swift */,
+				B97D2BB324A5773E00FC6DC4 /* CoronaWorldController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B9B7F45624EC698F00A747AA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B9B08B5024A56FE600DAA4A2 /* CoronaWorldTableViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		B9CB11D224E4809E00A6361A /* Protocolo */ = {
@@ -260,10 +444,10 @@
 		B9EB1F7324DDB6DA007F67A6 /* Cadastro */ = {
 			isa = PBXGroup;
 			children = (
-				B981B97A24B65DA90055C11F /* CadastroViewController.swift */,
-				B9EB1F7424DDB719007F67A6 /* ControllerCadastro.swift */,
-				B9CB11CC24E47EA400A6361A /* Cadastro.storyboard */,
-				B9CB11D924E5878600A6361A /* CadastroCoordinator.swift */,
+				B9B7F44124EC645500A747AA /* ViewController */,
+				B9B7F44424EC65BC00A747AA /* ViewModel */,
+				B9B7F44224EC64AF00A747AA /* View */,
+				B9B7F44324EC656E00A747AA /* Coordinator */,
 			);
 			path = Cadastro;
 			sourceTree = "<group>";
@@ -400,7 +584,7 @@
 				B92B5CD024848F54001FDD1A /* CoronaTableViewCell.swift in Sources */,
 				B9EB1F6C24DDA0A8007F67A6 /* Alert.swift in Sources */,
 				B92B5CC624843DD2001FDD1A /* CoronaModel.swift in Sources */,
-				B9128D5024B4E48A0040E29F /* MapController.swift in Sources */,
+				B9128D5024B4E48A0040E29F /* MapViewModel.swift in Sources */,
 				B9B08B4A24A56AE200DAA4A2 /* CoronaWorldModel.swift in Sources */,
 				B9128D4C24B4BC2B0040E29F /* ApiMap.swift in Sources */,
 				B9CB11E624E5D3DA00A6361A /* MapCoordinator.swift in Sources */,

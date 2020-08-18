@@ -16,7 +16,7 @@ class MapViewController: UIViewController {
     
     // MARK: - Properties
     lazy var locationManeger = CLLocationManager()
-    var controller = MapController()
+    var controller = MapViewModel()
     var country: String?
     weak var coordinator: MapCoordinator?
     

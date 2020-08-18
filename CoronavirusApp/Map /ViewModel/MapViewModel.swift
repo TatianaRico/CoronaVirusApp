@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MapController {
+class MapViewModel {
     
     // MARK: - Properties
     var modelController: [ApiMap]?
