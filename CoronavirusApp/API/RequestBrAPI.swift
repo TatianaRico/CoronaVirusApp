@@ -11,7 +11,7 @@ import Foundation
 class RequestBrAPI {
     
     // MARK: - Properties
-   private let basePath: String = "https://covid19-brazil-api.now.sh/api/report/v1"
+   private let basePath: String = "https://covid19-brazil-api.now.sh/"
     static let configuration: URLSessionConfiguration = {
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 30
@@ -23,7 +23,7 @@ class RequestBrAPI {
     
     // MARK: Methods
     func  requestBrasil(completion: @escaping ([Corona]?, Bool)-> Void ) {
-        guard let url = URL(string: basePath)  else {return}
+        guard let url = URL(string: basePath.appending("api/report/v1"))  else {return}
         
         let task = session.dataTask(with: url) { (data, response, error) in
             

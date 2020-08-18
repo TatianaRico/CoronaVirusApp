@@ -11,7 +11,7 @@ import Foundation
 class RequestWorldAPI {
     
     // MARK: - Properties
-   private let baseURL: String = "https://api.covid19api.com/summary"
+   private let baseURL: String = "https://api.covid19api.com/"
     
     static let configuration: URLSessionConfiguration = {
         let configuration = URLSessionConfiguration.default
@@ -25,7 +25,7 @@ class RequestWorldAPI {
     // MARK: Methods
     func requestWorld(completion: @escaping ([Country]?, Bool) -> Void) {
         
-        guard let url = URL(string: baseURL) else{return}
+        guard let url = URL(string: baseURL.appending("summary")) else{return}
         
         let task = session.dataTask(with: url) { (data, response, error) in
             
