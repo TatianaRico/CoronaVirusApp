@@ -1,34 +1,31 @@
 //
-//  CoronaTableViewController.swift
+//  CoronaWorldTableViewController.swift
 //  CoronavirusApp
 //
-//  Created by Tatiana Rico on 31/05/20.
+//  Created by Tatiana Rico on 25/06/20.
 //  Copyright © 2020 Tatiana Rico. All rights reserved.
 //
 
 import UIKit
 
-class CoronaTableViewController: UITableViewController {
+class CoronaWorldTableViewController: UITableViewController {
     
     // MARK: - Properties
-    private var controller = CoronaController()
-    weak var coordinator: CoronoBrCoordinator?
+    private var controller = CoronaWorldController()
+     weak var coordinator: CoronaWorldCoordinator?
     
     // MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        controller.loadCorona { [weak self](sucess) in
+        controller.getList { [weak self](sucess) in
             guard let self = self else {return}
-            if sucess {
-                self.tableView.reloadData()
-            }
+            self.tableView.reloadData()
         }
     }
-   
+    
     deinit {
-         coordinator?.childDidFinish(coordinator)
-          print("CoronaTableViewController deinit")
+        coordinator?.childDidFinish(coordinator)
+        print("CoronaWorldTableViewController de init")
     }
     
     // MARK: - Table view data source
@@ -37,15 +34,18 @@ class CoronaTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CoronaWorldTableViewCell
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CoronaTableViewCell
         cell?.setup(corona: controller.cellForRow(indexPath: indexPath))
-        return cell ?? CoronaTableViewCell()
+        
+        
+        return cell ?? CoronaWorldTableViewCell()
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let coronaSelec = controller.cellForRow(indexPath: indexPath)
-        coordinator?.goTableView(corona: coronaSelec)
+        
+        let elemContry = controller.cellForRow(indexPath: indexPath)
+        coordinator?.getElement(contry: elemContry)
     }
 }
 

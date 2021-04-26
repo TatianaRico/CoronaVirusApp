@@ -8,15 +8,15 @@
 
 import Foundation
 
-class MapController {
+class MapViewModel {
     
     // MARK: - Properties
     var modelController: [ApiMap]?
-    var controller = RequestAPIMap()
+    var controller = RequestMapAPI()
     
     // MARK: Methods
-    func getAPIMap(country: String, completion: @escaping (Bool) -> Void) {
-        controller.request(country: country) {[weak self](model, sucess) in
+    func getMap(country: String, completion: @escaping (Bool) -> Void) {
+        controller.requestMap(country: country) {[weak self](model, sucess) in
             if sucess {
                 self?.modelController = model
                 completion(true)
@@ -25,13 +25,13 @@ class MapController {
         }
     }
     
-    func latitude() -> Double {
+    func latitudeMap() -> Double {
         let model = modelController?.first
         let latitude = Double(model?.lat ?? "") ?? 0
         return latitude
     }
     
-    func longitude() -> Double {
+    func longitudeMap() -> Double {
         let model = modelController?.first
         let long =  Double(model?.lon ?? "") ?? 0
         return long

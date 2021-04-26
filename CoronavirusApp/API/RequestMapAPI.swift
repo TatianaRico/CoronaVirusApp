@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RequestAPIMap {
+class RequestMapAPI {
     
     // MARK: - Properties
     private let baseURl: String =  "https://api.covid19api.com/"
@@ -23,7 +23,7 @@ class RequestAPIMap {
     private let session = URLSession(configuration: configuration)
     
     // MARK: Methods
-    func request(country: String, completion: @escaping ([ApiMap]?, Bool)-> Void) {
+    func requestMap(country: String, completion: @escaping ([ApiMap]?, Bool)-> Void) {
         
         guard let url = URL(string: baseURl.appending("dayone/country/\(country)/status/confirmed")) else{return}
         

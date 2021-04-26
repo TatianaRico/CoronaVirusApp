@@ -10,27 +10,29 @@ import UIKit
 
 class CoronoBrCoordinator: Coordinator {
     
+    // MARK: - Properties
     var navigationController: UINavigationController
     var childCoordinator: [Coordinator] = []
     var parentCoordinator: Coordinator?
-
+    
+    // MARK: - Super Methods
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
         navigationController.navigationBar.isHidden = false
     }
     
+    // MARK: Methods
     func star() {
-        let storyBoard = UIStoryboard(name: "CoronaBrasil", bundle: nil)
-        let vc  = storyBoard.instantiateViewController(withIdentifier: "CoronaTableViewController") as? CoronaTableViewController
-        vc?.coordinator = self
-        navigationController.pushViewController(vc ?? CoronaTableViewController(), animated: true)
+        let vc  = CoronaTableViewController.instantiateFromStoryBoard(.brasil)
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func goTableView(corona: Corona) {
         let childCoordinator = DetailBrCoordinator(navigationController: navigationController, corona: corona )
-                        childCoordinator.parentCoordinator = self
-                        add(childCoordinator: childCoordinator)
-                        childCoordinator.star()
+        childCoordinator.parentCoordinator = self
+        add(childCoordinator: childCoordinator)
+        childCoordinator.star()
     }
     
     func childDidFinish(_ child: Coordinator) {

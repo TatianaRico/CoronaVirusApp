@@ -9,7 +9,7 @@
 import UIKit
 
 protocol Coordinator: class {
-    
+
     var navigationController: UINavigationController { get set }
     var childCoordinator: [Coordinator] {get set}
     var parentCoordinator: Coordinator? { get set }
@@ -22,7 +22,8 @@ protocol Coordinator: class {
 }
 
 extension Coordinator {
-    
+ 
+       // MARK: Methods
     func add(childCoordinator coordinator: Coordinator) {
         childCoordinator.append(coordinator)
     }

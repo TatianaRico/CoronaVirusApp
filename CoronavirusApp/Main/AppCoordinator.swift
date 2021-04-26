@@ -10,14 +10,17 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     
+    // MARK: - Properties
     var navigationController: UINavigationController
     var childCoordinator: [Coordinator] = []
     var parentCoordinator: Coordinator?
     
+    // MARK: - Super Methods
     init() {
         navigationController = UINavigationController()
     }
     
+    // MARK: Methods
     func star() {
         let childCoordinator = CadastroCoordinator(navigationController: navigationController)
         childCoordinator.parentCoordinator = self

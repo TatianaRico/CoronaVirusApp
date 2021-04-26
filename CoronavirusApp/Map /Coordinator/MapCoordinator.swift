@@ -9,20 +9,22 @@
 import UIKit
 
 class MapCoordinator: Coordinator {
-
+    
+    // MARK: - Properties
     var navigationController: UINavigationController
     var childCoordinator: [Coordinator] = []
     var parentCoordinator: Coordinator?
     
+    // MARK: - Super Methods
     init(navigationController: UINavigationController){
         self.navigationController = navigationController
     }
     
+    // MARK: Methods
     func star() {
-        let storyBoard = UIStoryboard(name: "Map", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "MapViewController") as? MapViewController
-        vc?.coordinator = self
-        navigationController.pushViewController(vc ?? MapViewController(), animated: true)
+        let vc = MapViewController.instantiateFromStoryBoard(.map)
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func childDidFinish(_ child: Coordinator) {

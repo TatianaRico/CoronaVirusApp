@@ -48,10 +48,7 @@
             self.coordinator?.goToNewClass()
         }
     }
-    
-    func recuperarEmail() {
-    }
-    
+   
     func colorView() {
         let gradient = CAGradientLayer()
         gradient.colors = [UIColor.blue.cgColor, UIColor.systemBlue.cgColor]
